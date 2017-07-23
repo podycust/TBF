@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VIF-dS-lxN">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zYX-xK-uWC">
+            <objects>
+                <viewController id="iQu-13-iJu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TOB-bd-1rY"/>
+                        <viewControllerLayoutGuide type="bottom" id="FLw-MO-f2M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="moj-PJ-um7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZVs-Xs-H2Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ka3-15-VlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="362.96851574212894"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OQB-Hs-ASi">
+            <objects>
+                <viewController id="Cw0-Wn-epe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKD-tw-n9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="rVN-eq-zLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43W-tm-yXG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BwD-uT-tY3">
+                                <rect key="frame" x="40" y="92" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="opening times: Tues- Fri:  12-3, 6-11 Sat: 12-7" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwG-PZ-sXB">
+                                <rect key="frame" x="34" y="242" width="252" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4ce-wr-XF1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Admission: Free Tue - Fri lunchtimes, £1 Tue &amp; Wed evenings, £3 Thu evening, £4 Fri evening, £2 Sat all day." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSD-Sz-NZW">
+                                <rect key="frame" x="24" y="287" width="256" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WHs-M9-Lqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93301083350000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qwG-PZ-sXB" firstAttribute="top" secondItem="BwD-uT-tY3" secondAttribute="bottom" constant="22" id="67G-ib-ube"/>
+                            <constraint firstItem="qwG-PZ-sXB" firstAttribute="centerX" secondItem="sSD-Sz-NZW" secondAttribute="centerX" constant="8" id="ERW-As-1jA"/>
+                            <constraint firstItem="qwG-PZ-sXB" firstAttribute="leading" secondItem="43W-tm-yXG" secondAttribute="leadingMargin" constant="18" id="Mml-E9-QW9"/>
+                            <constraint firstItem="rVN-eq-zLr" firstAttribute="top" secondItem="sSD-Sz-NZW" secondAttribute="bottom" constant="172" id="hkK-2l-ZMR"/>
+                            <constraint firstItem="sSD-Sz-NZW" firstAttribute="top" secondItem="qwG-PZ-sXB" secondAttribute="bottom" id="nPN-27-cGk"/>
+                            <constraint firstItem="qwG-PZ-sXB" firstAttribute="centerX" secondItem="BwD-uT-tY3" secondAttribute="centerX" id="u3c-Pi-s8F"/>
+                            <constraint firstItem="qwG-PZ-sXB" firstAttribute="centerX" secondItem="43W-tm-yXG" secondAttribute="centerX" id="zvb-me-6Eq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CrD-ih-Y6S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqO-LM-3Hq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1443.75" y="-293.66197183098592"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="m7K-Fd-gzB">
+            <objects>
+                <tabBarController id="VIF-dS-lxN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BUY-ma-Jc9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nUh-6M-HZO" kind="relationship" relationship="viewControllers" id="eDy-Fh-vVo"/>
+                        <segue destination="u4T-wd-v9o" kind="relationship" relationship="viewControllers" id="kQD-TK-59g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3a-SS-PHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="36"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="UYB-7A-Jya">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nUh-6M-HZO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home Filled" id="vRY-1V-jl8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zgC-to-boc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cw0-Wn-epe" kind="relationship" relationship="rootViewController" id="fpu-sl-x1W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8a9-Mz-fO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="-292.80359820089956"/>
+        </scene>
+        <!--Beers-->
+        <scene sceneID="Jt1-7q-vh3">
+            <objects>
+                <navigationController title="Beers" automaticallyAdjustsScrollViewInsets="NO" id="u4T-wd-v9o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beers" id="hht-yZ-N4U"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="haz-WU-mMY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iQu-13-iJu" kind="relationship" relationship="rootViewController" id="PEk-zL-J0q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xJ-Wk-zKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="362.96851574212894"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home Filled" width="30" height="30"/>
+        <image name="logo" width="958" height="959"/>
+    </resources>
+</document>

@@ -1,0 +1,13 @@
+<xml version="1.0">
+    <beers>
+       <beer>
+           <name>xml</name>
+           <price></price>
+           <pic></pic>
+       </beer>
+       <beer>
+           <name>La La Land</name>
+           <price></price>
+           <pic></pic>
+       </beer>
+</xml>

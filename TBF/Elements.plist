@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Beer</key>
+		<string>La La Land</string>
+		<key>no</key>
+		<integer>0</integer>
+		<key>Price</key>
+		<string>£34</string>
+		<key>pic</key>
+		<string>http://www.menshealth.com/sites/menshealth.com/files/styles/slideshow-desktop/public/images/slideshow2/beer-intro.jpg</string>
+	</dict>
+	<dict>
+		<key>Beer</key>
+		<string>Les Mis</string>
+		<key>Price</key>
+		<string>£33</string>
+		<key>no</key>
+		<integer>1</integer>
+		<key>pic</key>
+		<string>http://www.menshealth.com/sites/menshealth.com/files/styles/slideshow-desktop/public/images/slideshow2/beer-intro.jpg</string>
+	</dict>
+</array>
+</plist>
