@@ -18,6 +18,7 @@ pod 'OneSignal'
 #pod ‘CSwiftV’
 #pod ‘SwiftCSV’
 #pod 'SwiftWebVC'
+pod 'AEXML'
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 end

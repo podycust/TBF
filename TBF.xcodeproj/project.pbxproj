@@ -13,10 +13,8 @@
 		9F0E25D61EAA026C00E8C1F5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0E25D51EAA026C00E8C1F5 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		9F0E25D81EAA13B600E8C1F5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0E25D71EAA13B600E8C1F5 /* MessageUI.framework */; };
 		9F1949601EA7E3D1000F409C /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F19495F1EA7E3D1000F409C /* BeerViewController.swift */; };
-		9F1FF20E1EED915400880553 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FF20D1EED915400880553 /* TableViewController.swift */; };
 		9F325C491EAE26FA0017CCAD /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 9F325C481EAE26FA0017CCAD /* home.html */; };
 		9F325C4B1EAE27190017CCAD /* thurrockbeer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F325C4A1EAE27180017CCAD /* thurrockbeer.png */; };
-		9F5559EF1EA4B747006B0B8A /* beer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9F5559EE1EA4B747006B0B8A /* beer.xml */; };
 		9F607A411EA9FDBC00CB7C64 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F607A401EA9FDBC00CB7C64 /* NotificationService.swift */; };
 		9F607A451EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F607A3E1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9F62EBFB1EA8D55E00770E94 /* FindusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62EBFA1EA8D55E00770E94 /* FindusViewController.swift */; };
@@ -32,11 +30,17 @@
 		9F82C1581EA3E87D0066CD59 /* mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C1571EA3E87D0066CD59 /* mapview.swift */; };
 		9F82C15A1EA422910066CD59 /* xml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C1591EA422910066CD59 /* xml.swift */; };
 		9F82C15C1EA42EF10066CD59 /* tabviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C15B1EA42EF10066CD59 /* tabviewcontroller.swift */; };
+		9F86B2FB1F2BA22D008A91AB /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86B2FA1F2BA22D008A91AB /* AEXML.framework */; };
+		9F86B2FF1F2BA522008A91AB /* BeerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86B2FE1F2BA522008A91AB /* BeerTableViewController.swift */; };
+		9F86B3021F2BAFDF008A91AB /* beers.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9F86B3001F2BA791008A91AB /* beers.xml */; };
+		9F86B3041F2BB3A7008A91AB /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9F86B3031F2BB3A7008A91AB /* test.xml */; };
+		9F86B3061F2BBA9D008A91AB /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F86B3051F2BBA9D008A91AB /* infoViewController.swift */; };
 		9F903C771EAA379F00D7CA2C /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F903C761EAA379F00D7CA2C /* GoogleToolboxForMac.framework */; };
 		9F903C791EAA480E00D7CA2C /* EntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F903C781EAA480E00D7CA2C /* EntertainmentViewController.swift */; };
 		9FA6E9CC1EAA9B8A000EB7A8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6E9CB1EAA9B8A000EB7A8 /* Settings.bundle */; };
 		9FA6E9CE1EAA9EA9000EB7A8 /* ad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6E9CD1EAA9EA9000EB7A8 /* ad.plist */; };
 		9FC9F8221EED585F0096E237 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9F8211EED585F0096E237 /* Downloader.swift */; };
+		9FE62D771F2E295100082254 /* tbf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FE62D751F2E295100082254 /* tbf.xcdatamodeld */; };
 		9FE647721EC8F5AA00D2602E /* TBF-WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FE647711EC8F5AA00D2602E /* TBF-WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -95,12 +99,10 @@
 		9F0E25D71EAA13B600E8C1F5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9F19495F1EA7E3D1000F409C /* BeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
 		9F1FF20B1EED5B5A00880553 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		9F1FF20D1EED915400880553 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9F1FF2271EEDA42500880553 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "build/Debug-iphoneos/SwiftCSV.framework"; sourceTree = "<group>"; };
 		9F1FF23E1EEDA99600880553 /* CSwiftV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSwiftV.framework; path = "../../../Library/Developer/Xcode/DerivedData/TBF-eadoqqaxszjblaguhnskjabgeerz/Build/Products/Debug-iphonesimulator/CSwiftV/CSwiftV.framework"; sourceTree = "<group>"; };
 		9F325C481EAE26FA0017CCAD /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		9F325C4A1EAE27180017CCAD /* thurrockbeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thurrockbeer.png; sourceTree = "<group>"; };
-		9F5559EE1EA4B747006B0B8A /* beer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = beer.xml; sourceTree = "<group>"; };
 		9F607A3E1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F607A401EA9FDBC00CB7C64 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		9F607A421EA9FDBC00CB7C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +123,12 @@
 		9F82C1571EA3E87D0066CD59 /* mapview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mapview.swift; path = ../mapview.swift; sourceTree = "<group>"; };
 		9F82C1591EA422910066CD59 /* xml.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xml.swift; sourceTree = "<group>"; };
 		9F82C15B1EA42EF10066CD59 /* tabviewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabviewcontroller.swift; sourceTree = "<group>"; };
+		9F86B2FA1F2BA22D008A91AB /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = "../../../Library/Developer/Xcode/DerivedData/TBF-eadoqqaxszjblaguhnskjabgeerz/Build/Products/Debug-iphoneos/AEXML/AEXML.framework"; sourceTree = "<group>"; };
+		9F86B2FE1F2BA522008A91AB /* BeerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewController.swift; sourceTree = "<group>"; };
+		9F86B3001F2BA791008A91AB /* beers.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = beers.xml; sourceTree = "<group>"; };
+		9F86B3011F2BAEB3008A91AB /* convertcsv.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = convertcsv.xml; sourceTree = "<group>"; };
+		9F86B3031F2BB3A7008A91AB /* test.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		9F86B3051F2BBA9D008A91AB /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		9F903C741EAA362900D7CA2C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9F903C761EAA379F00D7CA2C /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Pods/../build/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		9F903C781EAA480E00D7CA2C /* EntertainmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntertainmentViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +137,7 @@
 		9FC9F81F1EED58480096E237 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "Pods/../build/Debug-iphoneos/SwiftCSV/SwiftCSV.framework"; sourceTree = "<group>"; };
 		9FC9F8211EED585F0096E237 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		9FCF238F1EAA01E100F7D6BD /* SwiftWebVC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftWebVC.framework; path = "../../../Library/Developer/Xcode/DerivedData/TBF-eadoqqaxszjblaguhnskjabgeerz/Build/Products/Debug-iphoneos/SwiftWebVC/SwiftWebVC.framework"; sourceTree = "<group>"; };
+		9FE62D761F2E295100082254 /* tbf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tbf.xcdatamodel; sourceTree = "<group>"; };
 		9FE647651EC8F5AA00D2602E /* TBF-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBF-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE647711EC8F5AA00D2602E /* TBF-WatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TBF-WatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -146,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F86B2FB1F2BA22D008A91AB /* AEXML.framework in Frameworks */,
 				9F903C771EAA379F00D7CA2C /* GoogleToolboxForMac.framework in Frameworks */,
 				9F0E25D81EAA13B600E8C1F5 /* MessageUI.framework in Frameworks */,
 				9F0E25D61EAA026C00E8C1F5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
@@ -224,7 +234,7 @@
 				9F82C1421EA3CF400066CD59 /* FirstViewController.swift */,
 				9F82C1441EA3CF400066CD59 /* SecondViewController.swift */,
 				9F82C1461EA3CF400066CD59 /* Main.storyboard */,
-				9F1FF20D1EED915400880553 /* TableViewController.swift */,
+				9F86B3051F2BBA9D008A91AB /* infoViewController.swift */,
 				9F325C4A1EAE27180017CCAD /* thurrockbeer.png */,
 				9F325C481EAE26FA0017CCAD /* home.html */,
 				9F903C781EAA480E00D7CA2C /* EntertainmentViewController.swift */,
@@ -234,12 +244,16 @@
 				9F82C15B1EA42EF10066CD59 /* tabviewcontroller.swift */,
 				9F82C1491EA3CF400066CD59 /* Assets.xcassets */,
 				9F62EBFC1EA8DB2600770E94 /* d.html */,
-				9F5559EE1EA4B747006B0B8A /* beer.xml */,
+				9F86B3001F2BA791008A91AB /* beers.xml */,
+				9F86B3011F2BAEB3008A91AB /* convertcsv.xml */,
 				9F82C14B1EA3CF400066CD59 /* LaunchScreen.storyboard */,
 				9F7124DD1ED72F8D00764105 /* Band-List.pdf */,
 				9F82C14E1EA3CF400066CD59 /* Info.plist */,
 				9F82C1591EA422910066CD59 /* xml.swift */,
 				9FC9F8211EED585F0096E237 /* Downloader.swift */,
+				9F86B2FE1F2BA522008A91AB /* BeerTableViewController.swift */,
+				9F86B3031F2BB3A7008A91AB /* test.xml */,
+				9FE62D751F2E295100082254 /* tbf.xcdatamodeld */,
 			);
 			path = TBF;
 			sourceTree = "<group>";
@@ -247,6 +261,7 @@
 		9F82C1541EA3D5560066CD59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F86B2FA1F2BA22D008A91AB /* AEXML.framework */,
 				9F1FF23E1EEDA99600880553 /* CSwiftV.framework */,
 				9F1FF2271EEDA42500880553 /* SwiftCSV.framework */,
 				9F1FF20B1EED5B5A00880553 /* Alamofire.framework */,
@@ -421,15 +436,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F86B3021F2BAFDF008A91AB /* beers.xml in Resources */,
 				9F82C14D1EA3CF400066CD59 /* LaunchScreen.storyboard in Resources */,
 				9F325C4B1EAE27190017CCAD /* thurrockbeer.png in Resources */,
 				9F325C491EAE26FA0017CCAD /* home.html in Resources */,
-				9F5559EF1EA4B747006B0B8A /* beer.xml in Resources */,
 				9FA6E9CE1EAA9EA9000EB7A8 /* ad.plist in Resources */,
 				9F82C14A1EA3CF400066CD59 /* Assets.xcassets in Resources */,
 				9F62EBFD1EA8DB2600770E94 /* d.html in Resources */,
 				9FA6E9CC1EAA9B8A000EB7A8 /* Settings.bundle in Resources */,
 				9F7124DE1ED72F8D00764105 /* Band-List.pdf in Resources */,
+				9F86B3041F2BB3A7008A91AB /* test.xml in Resources */,
 				9F82C1481EA3CF400066CD59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,14 +557,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE62D771F2E295100082254 /* tbf.xcdatamodeld in Sources */,
 				9FC9F8221EED585F0096E237 /* Downloader.swift in Sources */,
+				9F86B3061F2BBA9D008A91AB /* infoViewController.swift in Sources */,
 				9F82C1451EA3CF400066CD59 /* SecondViewController.swift in Sources */,
 				9F82C1581EA3E87D0066CD59 /* mapview.swift in Sources */,
 				9F62EBFB1EA8D55E00770E94 /* FindusViewController.swift in Sources */,
 				9F82C15A1EA422910066CD59 /* xml.swift in Sources */,
+				9F86B2FF1F2BA522008A91AB /* BeerTableViewController.swift in Sources */,
 				9F1949601EA7E3D1000F409C /* BeerViewController.swift in Sources */,
 				9F82C1411EA3CF400066CD59 /* AppDelegate.swift in Sources */,
-				9F1FF20E1EED915400880553 /* TableViewController.swift in Sources */,
 				9F0D5E631EA614FC00702F45 /* SocialViewController.swift in Sources */,
 				9F903C791EAA480E00D7CA2C /* EntertainmentViewController.swift in Sources */,
 				9F82C15C1EA42EF10066CD59 /* tabviewcontroller.swift in Sources */,
@@ -890,6 +908,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FE62D751F2E295100082254 /* tbf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FE62D761F2E295100082254 /* tbf.xcdatamodel */,
+			);
+			currentVersion = 9FE62D761F2E295100082254 /* tbf.xcdatamodel */;
+			path = tbf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9F82C1351EA3CF400066CD59 /* Project object */;
 }
