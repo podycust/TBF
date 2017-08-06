@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>OneSignalNotificationServiceExtension</string>
+	<string>TBF-Watch Extension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,15 +17,20 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>72</string>
+	<string>1</string>
 	<key>NSExtension</key>
 	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<key>WKAppBundleIdentifier</key>
+			<string>com.podycust.TBF.watchkitapp</string>
+		</dict>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.usernotifications.service</string>
-		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).NotificationService</string>
+		<string>com.apple.watchkit</string>
 	</dict>
+	<key>WKExtensionDelegateClassName</key>
+	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>
 </plist>

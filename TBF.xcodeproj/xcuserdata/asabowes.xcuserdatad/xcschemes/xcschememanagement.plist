@@ -9,15 +9,25 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>TBF-Watch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>TBF-Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>TBF-WatchOS (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>3</integer>
 		</dict>
 		<key>TBF-WatchOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>2</integer>
 		</dict>
 		<key>TBF.xcscheme</key>
 		<dict>

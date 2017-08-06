@@ -9,9 +9,25 @@
 import UIKit
 import OneSignal
 import GoogleMobileAds
+import CoreData
+import FirebaseCore
+import WatchKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
 
     var window: UIWindow?
 
@@ -25,6 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //   Will be used to reach the user at the most optimal time of day.
         // OneSignal.syncHashedEmail(userEmail)
 GADMobileAds.configure(withApplicationID: "ca-app-pub-7795363561300277~7048583341")
+        print(Bundle.main.bundlePath)
+        FirebaseApp.configure()
+        if WCSession.isSupported(){
+            WCSession.default().delegate = self
+            WCSession.default().activate()
+        }
         return true
     }
 
@@ -49,7 +71,7 @@ GADMobileAds.configure(withApplicationID: "ca-app-pub-7795363561300277~704858334
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
 
 }
 
