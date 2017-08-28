@@ -87,6 +87,7 @@ class favTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         let cell = tableView.dequeueReusableCell(withIdentifier: "fav", for: indexPath)
 
         // Configure the cell...
@@ -94,8 +95,54 @@ class favTableViewController: UITableViewController {
         //print(fav[indexPath.row])
         return cell
     }
-  
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var a = Array<Any> ()
+        a = UserDefaults.standard.array(forKey: "row")!
+        print(a)
+        let gg = String(describing: a[indexPath.row])
+       // let c = gg as! Int
+     
+        performSegue(withIdentifier: "favinfo", sender: gg)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        let bi = segue.destination as! infoViewController
+       print(sender)
+        let ss = sender as! String
+        print(ss)
+        guard let b = sender as? String
+            else {
+                print("Error") // Was not a string
+                return // needs a return or break here
+        }
+        print(b) // Was a string
+        let no: Int = { return Int(b)! }()
+       //let no = sender as! Int
+       // let no = Int(g)
+       print(no)
+        // print(thefavs.count)
+        bi.n = beers[no]
+        bi.b = "Brewer: " + brewer[no]
+        bi.a = "ABV: " + abv[no]
+        bi.d = des[no]
+        bi.l = "Location: " + location[no]
+        bi.row = String(describing: no)
+        bi.r = no
+        let d = UserDefaults.standard
+        let a = d.array(forKey: "fav") as! Array<String>
+        bi.fava = a.contains(beers[no])
+        
+        
+        // bi.fava = favoo.b[no]
+        //fav.b[no] = true
+        //favs = findfav(row: no)
+        
+    }
 }
+
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

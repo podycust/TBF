@@ -11,12 +11,12 @@ import AEXML
 import CoreData
 
 class BeerTableViewController: UITableViewController {
- var beers = Array<String>()
+ /*var beers = Array<String>()
     var brewer = Array<String>()
     var location = Array<String>()
     var type = Array<String>()
     var abv = Array<String>()
-    var des = Array<String>()
+    var des = Array<String>() */
     //var thefavs : [Favbeers] = []
     
     /*func getfavs(){
@@ -35,116 +35,11 @@ class BeerTableViewController: UITableViewController {
     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        let d = UserDefaults.standard
-   let da = UserDefaults.standard.bool(forKey: "new")
-        
-        if let watch = UserDefaults(suiteName: "group.tbf.watch") {
-
-            watch.set(UserDefaults.standard.array(forKey: "fav"), forKey: "beer")
-            watch.synchronize()
-            print(watch.array(forKey: "beer"))
-        }
-        if !da {
-        let a = [""]
-            d.set(true, forKey: "new")
-            d.set(a, forKey: "fav")}
-guard let xmlfile = Bundle.main.url(forResource: "beers", withExtension: "xml"),
-        let data = try? Data(contentsOf: xmlfile)
-   else{return
-    
-        }
-       // let file = Bundle.main.pa
-       /* let url1 = Bundle.main.url(forResource: "beers", withExtension: "db")
-        let URL4 = URL(fileURLWithPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "beers.db")
-        if FileManager.default.fileExists(atPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "beers.db"){
-            print("True")
-            try? FileManager.default.removeItem(at: URL4)
-            getfavs()
-        }
-        else{
-            print("false")
-           try? FileManager.default.copyItem(at: url1!, to: URL4)
-           */ do{
-                
-                let xmlroot = try AEXMLDocument(xml: data)
-                for child in xmlroot.root.children {
-                    print(child.name)
-                }
-                
-                    //let f = fav
-                for beer in xmlroot.root["beer"].all! {
-                    if let brew = beer.attributes["Brewer"] {
-                        brewer.append(brew)
-                        //fav.brewer = brew
-                        //try? context.save()
-                    }
-                    if let loc = beer.attributes["Location"]{
-                        location.append(loc)
-                        //fav.location = loc
-                        //try? context.save()
-                        //print(fav.location?.count)
-                    }
-                    if let ty = beer.attributes["Type"]{
-                        type.append(ty)
-                        //fav.type = ty
-                        ////try? context.save()
-                    }
-                    if let a = beer.attributes["ABV"]{
-                        abv.append(a)
-                       // fav.abv = a
-                        //try? context.save()
-                    }
-                    if let d = beer.attributes["Description"]{
-                        des.append(d)
-                       // fav.description1 = d
-                        //try? context.save()
-                    }
-                    if let name = beer.attributes["Name"]{
-                        beers.append(name)
-                        //print(beers)
-                       // fav.name = name
-                        //ry? context.save()
-                       // fav.name?.append(name)
-                      //  print(fav.name?.count)
-                      //  print(fav.name?.last)
-                        print(beers.count)
-                        //try? context.save()
-                    }
-                 
-                    //favoo.b.append(false)
-                    /*var i = 0
-                    while i <= beers.count {
-                        fav.name = beers[i]
-                        print(i)
-                        print(beers[i])
-                        i = i + 1
-                        try? context.save()
-                    }*/
-                    //getfavs()
-                   // print(thefavs.count)
-                }
-                  
-                
-                
-                
-                /* if let beerss = xmlroot.root["beer"].all {
-                 for Name in beerss {
-                 if let n = Name.value{
-                 print(n)
-                 beers.append(n)
-                 }
-                 }
-                 }*/
-                
-            }
-            catch {
-                
-            
-        }
+      
             //temp_func()
             //getfavs()
             //print(thefavs.count)
-            print(beers.count)
+        
         }
         
         // Uncomment the following line to preserve selection between presentations
@@ -206,10 +101,39 @@ guard let xmlfile = Bundle.main.url(forResource: "beers", withExtension: "xml"),
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "beername", for: indexPath)
+   
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "beername", for: indexPath) as? beerscellTableViewCell else {
+        fatalError("Error")
+        }
 
         // Configure the cell...
-       cell.textLabel?.text = beers[indexPath.row]
+        cell.beername.text = beers[indexPath.row]
+        if type[indexPath.row] == "Golden"{
+            cell.beerimage.image = UIImage(named: "golden")
+        }
+        if type[indexPath.row] == "Amber"{
+            cell.beerimage.image = UIImage(named: "amber")
+        }
+        if type[indexPath.row] == "Porter" {
+            cell.beerimage.image = UIImage(named: "porter")
+        }
+        if type[indexPath.row] == "Pale" {
+            cell.beerimage.image = UIImage(named: "pale")
+        }
+        if type[indexPath.row] == "Ruby" {
+            cell.beerimage.image = UIImage(named: "ruby")
+        }
+        if type[indexPath.row] == "Stout" {
+            cell.beerimage.image = UIImage(named: "stout")
+        }
+        if type[indexPath.row] == "Dark" {
+            cell.beerimage.image = UIImage(named: "dark")
+        }
+        
+        if type[indexPath.row] == "Best Bitter" {
+            cell.beerimage.image = UIImage(named: "bestbitter")
+        }
+       //cell.textLabel?.text = beers[indexPath.row]
         //cell.textLabel?.text = thefavs[indexPath.row].name
         return cell
     }

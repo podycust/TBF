@@ -9,26 +9,6 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>TBF-Watch (Notification).xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
-		</dict>
-		<key>TBF-Watch.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>TBF-WatchOS (Notification).xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>TBF-WatchOS.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 		<key>TBF.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -37,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9F456E831F364AEF00C7BC1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9F607A3D1EA9FDBC00CB7C64</key>
 		<dict>
 			<key>primary</key>

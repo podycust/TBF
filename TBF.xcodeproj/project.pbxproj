@@ -51,6 +51,8 @@
 		9FA6E9CE1EAA9EA9000EB7A8 /* ad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6E9CD1EAA9EA9000EB7A8 /* ad.plist */; };
 		9FC9F8221EED585F0096E237 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9F8211EED585F0096E237 /* Downloader.swift */; };
 		9FEB90121F2E8A2A00F4CFBA /* t.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB90111F2E8A2A00F4CFBA /* t.txt */; };
+		9FFDD1CC1F5370B00002C8EC /* beerscellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDD1CB1F5370B00002C8EC /* beerscellTableViewCell.swift */; };
+		9FFDD1D11F5383200002C8EC /* globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDD1D01F5383200002C8EC /* globals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,13 +105,9 @@
 		7C64D827A8E3E56D33978520 /* Pods-TBF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBF.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBF/Pods-TBF.release.xcconfig"; sourceTree = "<group>"; };
 		85EF1FAEBDBABF2CA5E44290 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		9F0D5E621EA614FC00702F45 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
-		9F0D5E641EA6160200702F45 /* SwiftWebVC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftWebVC.framework; path = "../../../Library/Developer/Xcode/DerivedData/TBF-eadoqqaxszjblaguhnskjabgeerz/Build/Products/Debug-iphonesimulator/SwiftWebVC/SwiftWebVC.framework"; sourceTree = "<group>"; };
 		9F0E25D51EAA026C00E8C1F5 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_OneSignalNotificationServiceExtension.framework; path = "Pods/../build/Debug-iphoneos/Pods_OneSignalNotificationServiceExtension.framework"; sourceTree = "<group>"; };
 		9F0E25D71EAA13B600E8C1F5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9F19495F1EA7E3D1000F409C /* BeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
-		9F1FF20B1EED5B5A00880553 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		9F1FF2271EEDA42500880553 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "build/Debug-iphoneos/SwiftCSV.framework"; sourceTree = "<group>"; };
-		9F1FF23E1EEDA99600880553 /* CSwiftV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSwiftV.framework; path = "../../../Library/Developer/Xcode/DerivedData/TBF-eadoqqaxszjblaguhnskjabgeerz/Build/Products/Debug-iphonesimulator/CSwiftV/CSwiftV.framework"; sourceTree = "<group>"; };
 		9F22E1481F2E3EBD00EC0846 /* favTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favTableViewController.swift; sourceTree = "<group>"; };
 		9F325C481EAE26FA0017CCAD /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		9F325C4A1EAE27180017CCAD /* thurrockbeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thurrockbeer.png; sourceTree = "<group>"; };
@@ -161,10 +159,11 @@
 		9FA6E9CD1EAA9EA9000EB7A8 /* ad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ad.plist; sourceTree = "<group>"; };
 		9FC9F81F1EED58480096E237 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "Pods/../build/Debug-iphoneos/SwiftCSV/SwiftCSV.framework"; sourceTree = "<group>"; };
 		9FC9F8211EED585F0096E237 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
-		9FCF238F1EAA01E100F7D6BD /* SwiftWebVC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftWebVC.framework; path = "../../../Library/Developer/Xcode/DerivedData/TBF-eadoqqaxszjblaguhnskjabgeerz/Build/Products/Debug-iphoneos/SwiftWebVC/SwiftWebVC.framework"; sourceTree = "<group>"; };
 		9FE647651EC8F5AA00D2602E /* TBF-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBF-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE647711EC8F5AA00D2602E /* TBF-WatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TBF-WatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEB90111F2E8A2A00F4CFBA /* t.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = t.txt; sourceTree = "<group>"; };
+		9FFDD1CB1F5370B00002C8EC /* beerscellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerscellTableViewCell.swift; sourceTree = "<group>"; };
+		9FFDD1D01F5383200002C8EC /* globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +302,7 @@
 				9F82C1421EA3CF400066CD59 /* FirstViewController.swift */,
 				9F82C1441EA3CF400066CD59 /* SecondViewController.swift */,
 				9F82C1461EA3CF400066CD59 /* Main.storyboard */,
+				9FFDD1CB1F5370B00002C8EC /* beerscellTableViewCell.swift */,
 				9F86B3051F2BBA9D008A91AB /* infoViewController.swift */,
 				9F22E1481F2E3EBD00EC0846 /* favTableViewController.swift */,
 				9F325C4A1EAE27180017CCAD /* thurrockbeer.png */,
@@ -325,6 +325,7 @@
 				9F456E801F36425000C7BC1D /* GoogleService-Info.plist */,
 				9F86B3031F2BB3A7008A91AB /* test.xml */,
 				9FEB90111F2E8A2A00F4CFBA /* t.txt */,
+				9FFDD1D01F5383200002C8EC /* globals.swift */,
 			);
 			path = TBF;
 			sourceTree = "<group>";
@@ -333,17 +334,12 @@
 			isa = PBXGroup;
 			children = (
 				9F86B2FA1F2BA22D008A91AB /* AEXML.framework */,
-				9F1FF23E1EEDA99600880553 /* CSwiftV.framework */,
-				9F1FF2271EEDA42500880553 /* SwiftCSV.framework */,
-				9F1FF20B1EED5B5A00880553 /* Alamofire.framework */,
 				9FC9F81F1EED58480096E237 /* SwiftCSV.framework */,
 				9F903C761EAA379F00D7CA2C /* GoogleToolboxForMac.framework */,
 				9F903C741EAA362900D7CA2C /* GoogleMobileAds.framework */,
 				9F0E25D71EAA13B600E8C1F5 /* MessageUI.framework */,
 				9F0E25D51EAA026C00E8C1F5 /* Pods_OneSignalNotificationServiceExtension.framework */,
-				9FCF238F1EAA01E100F7D6BD /* SwiftWebVC.framework */,
 				9F607A4B1EAA00AA00CB7C64 /* OneSignal.framework */,
-				9F0D5E641EA6160200702F45 /* SwiftWebVC.framework */,
 				9F82C1551EA3D5560066CD59 /* MapKit.framework */,
 				76A2A114FCFD773C2AC394E9 /* Pods_TBF.framework */,
 				2D9D31210BB3906373B0EF79 /* Pods_OneSignalNotificationServiceExtension.framework */,
@@ -470,7 +466,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Asa Bowes";
 				TargetAttributes = {
 					9F456E831F364AEF00C7BC1D = {
@@ -724,9 +720,11 @@
 				9F86B2FF1F2BA522008A91AB /* BeerTableViewController.swift in Sources */,
 				9F1949601EA7E3D1000F409C /* BeerViewController.swift in Sources */,
 				9F82C1411EA3CF400066CD59 /* AppDelegate.swift in Sources */,
+				9FFDD1CC1F5370B00002C8EC /* beerscellTableViewCell.swift in Sources */,
 				9F0D5E631EA614FC00702F45 /* SocialViewController.swift in Sources */,
 				9F903C791EAA480E00D7CA2C /* EntertainmentViewController.swift in Sources */,
 				9F82C15C1EA42EF10066CD59 /* tabviewcontroller.swift in Sources */,
+				9FFDD1D11F5383200002C8EC /* globals.swift in Sources */,
 				9F82C1431EA3CF400066CD59 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -842,6 +840,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = R7Q2BBVHKW;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -860,7 +859,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -868,7 +869,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -930,7 +935,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -938,7 +945,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -947,6 +958,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -957,6 +969,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -996,6 +1009,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = R7Q2BBVHKW;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";

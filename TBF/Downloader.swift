@@ -34,14 +34,14 @@ public class Downloader {
                 }
                 
             } else {
-                print("Failure: %@", error?.localizedDescription);
+                print("Failure: %@", error as Any);
             }
         }
         task.resume()
     }
     }
 
-struct beers {
+struct beers1 {
     var beer: Array<Any>
     let type: Array<Any>
     let Description: Array<Any>

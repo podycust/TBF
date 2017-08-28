@@ -15,9 +15,15 @@ class infoViewController: UIViewController {
     //var fav = Favbeers()
    // var selectedfav : Favbeers? = nil
     var f = Array<Any>()
+    var rowd = Array<Any>()
     //var fav = false
     /// called when view reappers checks if the currect beer is still in favorites!
     override func viewDidAppear(_ animated: Bool) {
+        brewer.sizeToFit()
+        location.sizeToFit()
+        //abv.sizeToFit()
+        //type.sizeToFit()
+        //des.sizeToFit()
         if let favobject = UserDefaults.standard.array(forKey: "fav") {
             let fd = favobject as! Array<String>
             if fd.contains(self.navigationItem.title!){
@@ -28,6 +34,10 @@ class infoViewController: UIViewController {
                 favbut.setTitle("Add To Favorites", for: UIControlState.normal)
             }
         }
+        
+        if UserDefaults.standard.array(forKey: "row") == nil {
+            UserDefaults.standard.set(rowd, forKey: "row")
+        }
     }
     
     
@@ -35,7 +45,7 @@ class infoViewController: UIViewController {
     {
         let defaults = UserDefaults.standard
         f = defaults.array(forKey: "fav")!
-
+        rowd = defaults.array(forKey: "row")!
         if fava == true {
             favbut.setImage(UIImage(named: "icons8-Star"), for: UIControlState.normal)
             favbut.setTitle("Add To Favorites", for: UIControlState.normal)
@@ -43,6 +53,7 @@ class infoViewController: UIViewController {
             if let i = g.index(of: self.navigationItem.title!) {
                f.remove(at: i)
                 UserDefaults.standard.set(f, forKey: "fav")
+                
                 //WCSession.default().transferUserInfo(["beers":f])
                 if let watch = UserDefaults(suiteName: "group.tbf.watch") {
                     watch.set(f, forKey: "beers")
@@ -62,8 +73,11 @@ class infoViewController: UIViewController {
             //try? context.save()
            
             print(f)
+            rowd.append(row)
+            print(rowd)
             f.append(navigationItem.title)
             defaults.set(f, forKey: "fav")
+            defaults.set(rowd, forKey: "row")
             print("added")
         }
         
@@ -81,7 +95,7 @@ class infoViewController: UIViewController {
     @IBOutlet weak var abv: UILabel!
     @IBOutlet weak var type: UILabel!
     @IBOutlet weak var des: UILabel!
-    
+  
     var n = ""
     var l = ""
     var b = ""
@@ -93,6 +107,7 @@ class infoViewController: UIViewController {
     var r = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(a)
         print(n)
 //name.text = n
         location.text = l
