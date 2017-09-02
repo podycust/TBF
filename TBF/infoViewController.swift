@@ -72,9 +72,9 @@ class infoViewController: UIViewController {
             fava = true
             //try? context.save()
            
-            print(f)
+           // print(f)
             rowd.append(row)
-            print(rowd)
+           // print(rowd)
             f.append(navigationItem.title)
             defaults.set(f, forKey: "fav")
             defaults.set(rowd, forKey: "row")
@@ -107,8 +107,8 @@ class infoViewController: UIViewController {
     var r = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(a)
-        print(n)
+       // print(a)
+      //  print(n)
 //name.text = n
         location.text = l
         des.text = d

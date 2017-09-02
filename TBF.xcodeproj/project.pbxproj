@@ -17,14 +17,6 @@
 		9F325C491EAE26FA0017CCAD /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 9F325C481EAE26FA0017CCAD /* home.html */; };
 		9F325C4B1EAE27190017CCAD /* thurrockbeer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F325C4A1EAE27180017CCAD /* thurrockbeer.png */; };
 		9F456E811F3642BC00C7BC1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F456E801F36425000C7BC1D /* GoogleService-Info.plist */; };
-		9F456E881F364AEF00C7BC1D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F456E861F364AEF00C7BC1D /* Interface.storyboard */; };
-		9F456E8A1F364AEF00C7BC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F456E891F364AEF00C7BC1D /* Assets.xcassets */; };
-		9F456E911F364AF000C7BC1D /* TBF-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F456E901F364AEF00C7BC1D /* TBF-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9F456E961F364AF000C7BC1D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456E951F364AF000C7BC1D /* InterfaceController.swift */; };
-		9F456E981F364AF000C7BC1D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456E971F364AF000C7BC1D /* ExtensionDelegate.swift */; };
-		9F456E9A1F364AF000C7BC1D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456E991F364AF000C7BC1D /* NotificationController.swift */; };
-		9F456E9C1F364AF000C7BC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F456E9B1F364AF000C7BC1D /* Assets.xcassets */; };
-		9F456EAF1F36513600C7BC1D /* beertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456EAE1F36513600C7BC1D /* beertable.swift */; };
 		9F607A411EA9FDBC00CB7C64 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F607A401EA9FDBC00CB7C64 /* NotificationService.swift */; };
 		9F607A451EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F607A3E1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9F62EBFB1EA8D55E00770E94 /* FindusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62EBFA1EA8D55E00770E94 /* FindusViewController.swift */; };
@@ -56,13 +48,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9F456E921F364AF000C7BC1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F82C1351EA3CF400066CD59 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F456E8F1F364AEF00C7BC1D;
-			remoteInfo = "TBF-Watch Extension";
-		};
 		9F607A431EA9FDBC00CB7C64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F82C1351EA3CF400066CD59 /* Project object */;
@@ -73,17 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9F456EA51F364AF000C7BC1D /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				9F456E911F364AF000C7BC1D /* TBF-Watch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F607A491EA9FDBC00CB7C64 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,20 +86,6 @@
 		9F325C481EAE26FA0017CCAD /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		9F325C4A1EAE27180017CCAD /* thurrockbeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thurrockbeer.png; sourceTree = "<group>"; };
 		9F456E801F36425000C7BC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9F456E841F364AEF00C7BC1D /* TBF-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBF-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F456E871F364AEF00C7BC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		9F456E891F364AEF00C7BC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9F456E8B1F364AEF00C7BC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F456E901F364AEF00C7BC1D /* TBF-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TBF-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F456E951F364AF000C7BC1D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		9F456E971F364AF000C7BC1D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		9F456E991F364AF000C7BC1D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		9F456E9B1F364AF000C7BC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9F456E9D1F364AF000C7BC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F456E9E1F364AF000C7BC1D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		9F456EAE1F36513600C7BC1D /* beertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beertable.swift; sourceTree = "<group>"; };
-		9F456EB21F3658A800C7BC1D /* TBF-Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TBF-Watch.entitlements"; sourceTree = "<group>"; };
-		9F456EB31F365F0000C7BC1D /* TBF-Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TBF-Watch Extension.entitlements"; sourceTree = "<group>"; };
 		9F607A3E1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F607A401EA9FDBC00CB7C64 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		9F607A421EA9FDBC00CB7C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,21 +118,12 @@
 		9FA6E9CD1EAA9EA9000EB7A8 /* ad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ad.plist; sourceTree = "<group>"; };
 		9FC9F81F1EED58480096E237 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "Pods/../build/Debug-iphoneos/SwiftCSV/SwiftCSV.framework"; sourceTree = "<group>"; };
 		9FC9F8211EED585F0096E237 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
-		9FE647651EC8F5AA00D2602E /* TBF-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TBF-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FE647711EC8F5AA00D2602E /* TBF-WatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TBF-WatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEB90111F2E8A2A00F4CFBA /* t.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = t.txt; sourceTree = "<group>"; };
 		9FFDD1CB1F5370B00002C8EC /* beerscellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerscellTableViewCell.swift; sourceTree = "<group>"; };
 		9FFDD1D01F5383200002C8EC /* globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F456E8D1F364AEF00C7BC1D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F607A3B1EA9FDBC00CB7C64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,27 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FE6476E1EC8F5AA00D2602E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7266A57409E91827FDA92C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CADB880B7B75768DB9A5B45C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -228,32 +158,6 @@
 				267C5D6DE526132AF3171F1A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		9F456E851F364AEF00C7BC1D /* TBF-Watch */ = {
-			isa = PBXGroup;
-			children = (
-				9F456EB21F3658A800C7BC1D /* TBF-Watch.entitlements */,
-				9F456E861F364AEF00C7BC1D /* Interface.storyboard */,
-				9F456E891F364AEF00C7BC1D /* Assets.xcassets */,
-				9F456E8B1F364AEF00C7BC1D /* Info.plist */,
-				9F456EAE1F36513600C7BC1D /* beertable.swift */,
-			);
-			path = "TBF-Watch";
-			sourceTree = "<group>";
-		};
-		9F456E941F364AF000C7BC1D /* TBF-Watch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				9F456EB31F365F0000C7BC1D /* TBF-Watch Extension.entitlements */,
-				9F456E951F364AF000C7BC1D /* InterfaceController.swift */,
-				9F456E971F364AF000C7BC1D /* ExtensionDelegate.swift */,
-				9F456E991F364AF000C7BC1D /* NotificationController.swift */,
-				9F456E9B1F364AF000C7BC1D /* Assets.xcassets */,
-				9F456E9D1F364AF000C7BC1D /* Info.plist */,
-				9F456E9E1F364AF000C7BC1D /* PushNotificationPayload.apns */,
-			);
-			path = "TBF-Watch Extension";
 			sourceTree = "<group>";
 		};
 		9F607A3F1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */ = {
@@ -272,8 +176,6 @@
 				9FA6E9CB1EAA9B8A000EB7A8 /* Settings.bundle */,
 				9F82C13F1EA3CF400066CD59 /* TBF */,
 				9F607A3F1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */,
-				9F456E851F364AEF00C7BC1D /* TBF-Watch */,
-				9F456E941F364AF000C7BC1D /* TBF-Watch Extension */,
 				9F82C13E1EA3CF400066CD59 /* Products */,
 				9F82C1541EA3D5560066CD59 /* Frameworks */,
 				39562F333010B006E9E35FB5 /* Pods */,
@@ -285,10 +187,6 @@
 			children = (
 				9F82C13D1EA3CF400066CD59 /* TBF.app */,
 				9F607A3E1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex */,
-				9FE647651EC8F5AA00D2602E /* TBF-WatchOS.app */,
-				9FE647711EC8F5AA00D2602E /* TBF-WatchOS Extension.appex */,
-				9F456E841F364AEF00C7BC1D /* TBF-Watch.app */,
-				9F456E901F364AEF00C7BC1D /* TBF-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,41 +247,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F456E831F364AEF00C7BC1D /* TBF-Watch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F456EA61F364AF000C7BC1D /* Build configuration list for PBXNativeTarget "TBF-Watch" */;
-			buildPhases = (
-				9F456E821F364AEF00C7BC1D /* Resources */,
-				9F456EA51F364AF000C7BC1D /* Embed App Extensions */,
-				CADB880B7B75768DB9A5B45C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9F456E931F364AF000C7BC1D /* PBXTargetDependency */,
-			);
-			name = "TBF-Watch";
-			productName = "TBF-Watch";
-			productReference = 9F456E841F364AEF00C7BC1D /* TBF-Watch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		9F456E8F1F364AEF00C7BC1D /* TBF-Watch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F456EA21F364AF000C7BC1D /* Build configuration list for PBXNativeTarget "TBF-Watch Extension" */;
-			buildPhases = (
-				9F456E8C1F364AEF00C7BC1D /* Sources */,
-				9F456E8D1F364AEF00C7BC1D /* Frameworks */,
-				9F456E8E1F364AEF00C7BC1D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TBF-Watch Extension";
-			productName = "TBF-Watch Extension";
-			productReference = 9F456E901F364AEF00C7BC1D /* TBF-Watch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 		9F607A3D1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F607A481EA9FDBC00CB7C64 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
@@ -425,39 +288,6 @@
 			productReference = 9F82C13D1EA3CF400066CD59 /* TBF.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9FE647641EC8F5AA00D2602E /* TBF-WatchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FE6478A1EC8F5AA00D2602E /* Build configuration list for PBXNativeTarget "TBF-WatchOS" */;
-			buildPhases = (
-				9FE647631EC8F5AA00D2602E /* Resources */,
-				C7266A57409E91827FDA92C6 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TBF-WatchOS";
-			productName = "TBF-WatchOS";
-			productReference = 9FE647651EC8F5AA00D2602E /* TBF-WatchOS.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		9FE647701EC8F5AA00D2602E /* TBF-WatchOS Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FE647881EC8F5AA00D2602E /* Build configuration list for PBXNativeTarget "TBF-WatchOS Extension" */;
-			buildPhases = (
-				9FE6476D1EC8F5AA00D2602E /* Sources */,
-				9FE6476E1EC8F5AA00D2602E /* Frameworks */,
-				9FE6476F1EC8F5AA00D2602E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TBF-WatchOS Extension";
-			productName = "TBF-WatchOS Extension";
-			productReference = 9FE647711EC8F5AA00D2602E /* TBF-WatchOS Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -468,24 +298,6 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Asa Bowes";
 				TargetAttributes = {
-					9F456E831F364AEF00C7BC1D = {
-						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = R7Q2BBVHKW;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					9F456E8F1F364AEF00C7BC1D = {
-						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = R7Q2BBVHKW;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
 					9F607A3D1EA9FDBC00CB7C64 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = R7Q2BBVHKW;
@@ -511,16 +323,6 @@
 							};
 						};
 					};
-					9FE647641EC8F5AA00D2602E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R7Q2BBVHKW;
-						ProvisioningStyle = Automatic;
-					};
-					9FE647701EC8F5AA00D2602E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R7Q2BBVHKW;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 9F82C1381EA3CF400066CD59 /* Build configuration list for PBXProject "TBF" */;
@@ -538,32 +340,11 @@
 			targets = (
 				9F82C13C1EA3CF400066CD59 /* TBF */,
 				9F607A3D1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */,
-				9FE647641EC8F5AA00D2602E /* TBF-WatchOS */,
-				9FE647701EC8F5AA00D2602E /* TBF-WatchOS Extension */,
-				9F456E831F364AEF00C7BC1D /* TBF-Watch */,
-				9F456E8F1F364AEF00C7BC1D /* TBF-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9F456E821F364AEF00C7BC1D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F456E8A1F364AEF00C7BC1D /* Assets.xcassets in Resources */,
-				9F456E881F364AEF00C7BC1D /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F456E8E1F364AEF00C7BC1D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F456E9C1F364AF000C7BC1D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F607A3C1EA9FDBC00CB7C64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,20 +368,6 @@
 				9FA6E9CC1EAA9B8A000EB7A8 /* Settings.bundle in Resources */,
 				9F7124DE1ED72F8D00764105 /* Band-List.pdf in Resources */,
 				9F82C1481EA3CF400066CD59 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FE647631EC8F5AA00D2602E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FE6476F1EC8F5AA00D2602E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,16 +452,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9F456E8C1F364AEF00C7BC1D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F456E9A1F364AF000C7BC1D /* NotificationController.swift in Sources */,
-				9F456E981F364AF000C7BC1D /* ExtensionDelegate.swift in Sources */,
-				9F456E961F364AF000C7BC1D /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F607A3A1EA9FDBC00CB7C64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -707,7 +464,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F456EAF1F36513600C7BC1D /* beertable.swift in Sources */,
 				9F22E1491F2E3EBE00EC0846 /* favTableViewController.swift in Sources */,
 				9FC9F8221EED585F0096E237 /* Downloader.swift in Sources */,
 				9F86B3061F2BBA9D008A91AB /* infoViewController.swift in Sources */,
@@ -727,21 +483,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FE6476D1EC8F5AA00D2602E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9F456E931F364AF000C7BC1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F456E8F1F364AEF00C7BC1D /* TBF-Watch Extension */;
-			targetProxy = 9F456E921F364AF000C7BC1D /* PBXContainerItemProxy */;
-		};
 		9F607A441EA9FDBC00CB7C64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F607A3D1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */;
@@ -750,14 +494,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9F456E861F364AEF00C7BC1D /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F456E871F364AEF00C7BC1D /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		9F82C1461EA3CF400066CD59 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -777,61 +513,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9F456EA41F364AF000C7BC1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "TBF-Watch Extension/TBF-Watch Extension.entitlements";
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "TBF-Watch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Release;
-		};
-		9F456EA81F364AF000C7BC1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "TBF-Watch/TBF-Watch.entitlements";
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				IBSC_MODULE = TBF_Watch_Extension;
-				INFOPLIST_FILE = "TBF-Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
 		9F607A471EA9FDBC00CB7C64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 267C5D6DE526132AF3171F1A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
@@ -915,7 +596,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
 				);
 				INFOPLIST_FILE = TBF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -993,7 +674,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
 				);
 				INFOPLIST_FILE = TBF/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1016,150 +697,9 @@
 			};
 			name = Debug;
 		};
-		9FA733DF1F3666C5000195B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				IBSC_MODULE = TBF_WatchOS_Extension;
-				INFOPLIST_FILE = "TBF-WatchOS/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		9FA733E01F3666C5000195B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				INFOPLIST_FILE = "TBF-WatchOS Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		9FA733E11F3666C5000195B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "TBF-Watch/TBF-Watch.entitlements";
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				IBSC_MODULE = TBF_Watch_Extension;
-				INFOPLIST_FILE = "TBF-Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		9FA733E21F3666C5000195B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "TBF-Watch Extension/TBF-Watch Extension.entitlements";
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "TBF-Watch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Debug;
-		};
-		9FE647851EC8F5AA00D2602E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				IBSC_MODULE = TBF_WatchOS_Extension;
-				INFOPLIST_FILE = "TBF-WatchOS/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
-		9FE647871EC8F5AA00D2602E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = R7Q2BBVHKW;
-				INFOPLIST_FILE = "TBF-WatchOS Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.podycust.TBF.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F456EA21F364AF000C7BC1D /* Build configuration list for PBXNativeTarget "TBF-Watch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F456EA41F364AF000C7BC1D /* Release */,
-				9FA733E21F3666C5000195B6 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F456EA61F364AF000C7BC1D /* Build configuration list for PBXNativeTarget "TBF-Watch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F456EA81F364AF000C7BC1D /* Release */,
-				9FA733E11F3666C5000195B6 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9F607A481EA9FDBC00CB7C64 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1183,24 +723,6 @@
 			buildConfigurations = (
 				9F82C1531EA3CF400066CD59 /* Release */,
 				9FA733DD1F3666C5000195B6 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9FE647881EC8F5AA00D2602E /* Build configuration list for PBXNativeTarget "TBF-WatchOS Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FE647871EC8F5AA00D2602E /* Release */,
-				9FA733E01F3666C5000195B6 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9FE6478A1EC8F5AA00D2602E /* Build configuration list for PBXNativeTarget "TBF-WatchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FE647851EC8F5AA00D2602E /* Release */,
-				9FA733DF1F3666C5000195B6 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

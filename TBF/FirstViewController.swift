@@ -29,7 +29,7 @@ class FirstViewController: UIViewController {
             watch.synchronize()
             print(watch.array(forKey: "beer"))
         }
-    loader.loadbeersforfav()
+    
         // loadtimes()
        // loadprices()
         let beerwork = DispatchQueue (label: "beer_worker")
@@ -39,7 +39,7 @@ class FirstViewController: UIViewController {
                 //self.loadfavbeersinfo()
                 
             } else {
-                let alert = UIAlertController(title: "Error", message: "It Appears That Your Not Connected To The Internet So We Was Unable to Display The Beer List", preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: "Error", message: "It Appears That Your Not Connected To The Internet So We Where Unable to Load The Beer List", preferredStyle: UIAlertControllerStyle.alert)
                 let DestructiveAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive) {
                     (result : UIAlertAction) -> Void in
                     print("Destructive")
@@ -51,7 +51,7 @@ class FirstViewController: UIViewController {
                     (result : UIAlertAction) -> Void in
                     print("OK")
                 }
-                alert.addAction(DestructiveAction)
+                //alert.addAction(DestructiveAction)
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)
             }
@@ -64,18 +64,18 @@ class FirstViewController: UIViewController {
         web.loadRequest(req)
         NotificationCenter.default.addObserver(self, selector: #selector(land), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     }
-    var load = loader()
+    
     
     func loadbeersnew() {
         Alamofire.request("https://www.bowesgames.co.uk/app/beers.xml", parameters: nil) //Alamofire defaults to GET requests
             
             .response { response in
-                print(response.response)
+               
                 if let ds = response.data {
-                    print(ds) // if you want to check XML data in debug window.
+                    //print(ds) // if you want to check XML data in debug window.
                     //let string1 = String(data: ds, encoding: String.Encoding.utf8) ?? "Data could not be printed"
                     // print(string1)
-                    var xml = SWXMLHash.parse(ds)
+                    let xml = SWXMLHash.parse(ds)
                     for elem in xml["root"]["beer"].all {
                         //  print(elem.value(ofAttribute: "Brewer"))
                         brewer.append((elem["Brewer"].element!.text))
@@ -84,7 +84,7 @@ class FirstViewController: UIViewController {
                         beers.append((elem["Name"].element!.text))
                         type.append((elem["Type"].element!.text))
                         des.append((elem["Description"].element!.text))
-                        print(beers)
+                        //print(beers)
                         //print(elem.all.count)
                     }
                 }

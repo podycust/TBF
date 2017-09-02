@@ -34,12 +34,12 @@ class favTableViewController: UITableViewController {
   
         Alamofire.request("https://www.bowesgames.co.uk/app/fav1.xml", parameters: nil) //Alamofire defaults to GET requests
             .response { response in
-                print(response.response)
+               
                 if let ds = response.data {
-                    print(ds) // if you want to check XML data in debug window.
+                   // print(ds) // if you want to check XML data in debug window.
                     //let string1 = String(data: ds, encoding: String.Encoding.utf8) ?? "Data could not be printed"
                    // print(string1)
-                     var xml = SWXMLHash.parse(ds)
+                    let xml = SWXMLHash.parse(ds)
                     for elem in xml["root"]["beer"].all {
                       //  print(elem.value(ofAttribute: "Brewer"))
                         favbrewer.append((elem["Brewer"].element!.text))
@@ -48,7 +48,7 @@ class favTableViewController: UITableViewController {
                         favbeers.append((elem["Name"].element!.text))
                         favtype.append((elem["Type"].element!.text))
                         favdes.append((elem["Description"].element!.text))
-                        print(favbeers)
+                        //print(favbeers)
                         //print(elem.all.count)
                     }
                 }
@@ -125,7 +125,7 @@ class favTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print(fav.count)
+        //print(fav.count)
     
         return fav.count - 1
     }
@@ -142,7 +142,7 @@ class favTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var a = Array<Any> ()
         a = UserDefaults.standard.array(forKey: "row")!
-        print(a)
+        //print(a)
         let gg = String(describing: a[indexPath.row])
        // let c = gg as! Int
      
@@ -153,19 +153,19 @@ class favTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         let bi = segue.destination as! infoViewController
-       print(sender)
-        let ss = sender as! String
-        print(ss)
+       //print(sender)
+        //let ss = sender as! String
+        //print(ss)
         guard let b = sender as? String
             else {
                 print("Error") // Was not a string
                 return // needs a return or break here
         }
-        print(b) // Was a string
+       // print(b) // Was a string
         let no: Int = { return Int(b)! }()
        //let no = sender as! Int
        // let no = Int(g)
-       print(no)
+       //print(no)
         // print(thefavs.count)
         bi.n = beers[no]
         bi.b = "Brewer: " + brewer[no]
