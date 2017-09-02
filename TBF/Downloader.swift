@@ -9,7 +9,7 @@
 import Foundation
 
 public class Downloader {
-    class func load(url: URL, to localUrl: URL) /*, completion: @escaping () -> ()) */{
+    class func load(url: URL, to localUrl: URL, f: String) /*, completion: @escaping () -> ()) */{
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let request = URLRequest(url: url)
@@ -23,9 +23,16 @@ public class Downloader {
                 
                 do {
                     let u = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).absoluteString
-                   let s = u + "test.csv"
+                   let s = u + f
                     let g = URL(string: s)
-                   
+                  // let g = localUrl
+                    if f == "fav.xml" {
+                        favlo = (g?.absoluteString)!
+                        print(favlo)
+                    }
+                    if f == "beers.xml" {
+                        try? FileManager.default.removeItem(at: (g)!)
+                    }
                     try FileManager.default.copyItem(at: tempLocalUrl, to: g!)
                     
                    // completion()
@@ -41,33 +48,28 @@ public class Downloader {
     }
     }
 
-struct beers1 {
-    var beer: Array<Any>
-    let type: Array<Any>
-    let Description: Array<Any>
-    let ABV: Array<Any>
-    var t:String
-    static func load() {
+public class loader {
+    
+    class func loadbeers() {
         var path = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).absoluteString
-        path += "test.csv"
+        path += "beers.xml"
+        let s = "beers.xml"
         let to = URL(fileURLWithPath: path)
-        let urls = URL(string: "https://www.bowesgames.co.uk/app/pdf/test.csv")
-        Downloader.load(url: urls!, to: to)
+        let urls = URL(string: "https://www.bowesgames.co.uk/app/beers.xml")
+        Downloader.load(url: urls!, to: to, f: s)
+      
        
     }
     
-    public func beer(row: Int)-> Array<Any>{
-        return [beer[row]]
+    
+    class func loadbeersforfav() {
+        var path = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).absoluteString
+        path += "fav.xml"
+        let to = URL(fileURLWithPath: path)
+        let urls = URL(string: "https://www.bowesgames.co.uk/app/fav.xml")
+        let s = "fav.xml"
+        Downloader.load(url: urls!, to: to, f: s)
+       
     }
     
-    public func ABV (row: Int)->Array<Any>{
-        return [ABV[row]]
-    }
-    
-    public func type(row: Int)->Array<Any>{
-        return [type[row]]
-    }
-    public func description (row:Int) -> Array<Any> {
-        return [Description[row]]
-    }
 }

@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import AEXML
+import Alamofire
+import SWXMLHash
 
 class favTableViewController: UITableViewController {
 
@@ -22,9 +24,51 @@ class favTableViewController: UITableViewController {
         if let favobject = d.array(forKey: "fav") {
             fav = favobject
         }
+        if connected.isconnected {
+            loadfavbeers()} 
         tableView.reloadData()
     }
    
+    func loadfavbeers() {
+       // let xmlfile = URL(fileURLWithPath: favlo)
+  
+        Alamofire.request("https://www.bowesgames.co.uk/app/fav1.xml", parameters: nil) //Alamofire defaults to GET requests
+            .response { response in
+                print(response.response)
+                if let ds = response.data {
+                    print(ds) // if you want to check XML data in debug window.
+                    //let string1 = String(data: ds, encoding: String.Encoding.utf8) ?? "Data could not be printed"
+                   // print(string1)
+                     var xml = SWXMLHash.parse(ds)
+                    for elem in xml["root"]["beer"].all {
+                      //  print(elem.value(ofAttribute: "Brewer"))
+                        favbrewer.append((elem["Brewer"].element!.text))
+                        favabv.append((elem["ABV"].element!.text))
+                        favlocation.append((elem["Location"].element!.text))
+                        favbeers.append((elem["Name"].element!.text))
+                        favtype.append((elem["Type"].element!.text))
+                        favdes.append((elem["Description"].element!.text))
+                        print(favbeers)
+                        //print(elem.all.count)
+                    }
+                }
+        }
+            //let data = try? Data.init(contentsOf: xmlfile)
+           
+        // let file = Bundle.main.pa
+        /* let url1 = Bundle.main.url(forResource: "beers", withExtension: "db")
+         let URL4 = URL(fileURLWithPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "beers.db")
+         if FileManager.default.fileExists(atPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "beers.db"){
+         print("True")
+         try? FileManager.default.removeItem(at: URL4)
+         getfavs()
+         }
+         else{
+         print("false")
+         try? FileManager.default.copyItem(at: url1!, to: URL4)
+         */
+    }
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
        if(editingStyle == .delete ) {

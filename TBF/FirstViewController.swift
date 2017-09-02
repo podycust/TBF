@@ -8,6 +8,9 @@
 
 import UIKit
 import GoogleMobileAds
+import AEXML
+import Alamofire
+import SWXMLHash
 
 class FirstViewController: UIViewController {
 
@@ -20,8 +23,39 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //self.navigationItem.title = "Welcome"
-       loadtimes()
-        loadprices()
+        if let watch = UserDefaults(suiteName: "group.tbf.watch") {
+        
+            watch.set(UserDefaults.standard.array(forKey: "fav"), forKey: "beer")
+            watch.synchronize()
+            print(watch.array(forKey: "beer"))
+        }
+    loader.loadbeersforfav()
+        // loadtimes()
+       // loadprices()
+        let beerwork = DispatchQueue (label: "beer_worker")
+        beerwork.async {
+            if connected.isconnected {
+            self.loadbeersnew()
+                //self.loadfavbeersinfo()
+                
+            } else {
+                let alert = UIAlertController(title: "Error", message: "It Appears That Your Not Connected To The Internet So We Was Unable to Display The Beer List", preferredStyle: UIAlertControllerStyle.alert)
+                let DestructiveAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive) {
+                    (result : UIAlertAction) -> Void in
+                    print("Destructive")
+                }
+                
+                // Replace UIAlertActionStyle.Default by UIAlertActionStyle.default
+                
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                    (result : UIAlertAction) -> Void in
+                    print("OK")
+                }
+                alert.addAction(DestructiveAction)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }  //loadbeers()
         loadads()
         web.frame = self.view.bounds
         //web.frame = view.frame
@@ -29,6 +63,153 @@ class FirstViewController: UIViewController {
         let req = URLRequest(url: burl!)
         web.loadRequest(req)
         NotificationCenter.default.addObserver(self, selector: #selector(land), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+    }
+    var load = loader()
+    
+    func loadbeersnew() {
+        Alamofire.request("https://www.bowesgames.co.uk/app/beers.xml", parameters: nil) //Alamofire defaults to GET requests
+            
+            .response { response in
+                print(response.response)
+                if let ds = response.data {
+                    print(ds) // if you want to check XML data in debug window.
+                    //let string1 = String(data: ds, encoding: String.Encoding.utf8) ?? "Data could not be printed"
+                    // print(string1)
+                    var xml = SWXMLHash.parse(ds)
+                    for elem in xml["root"]["beer"].all {
+                        //  print(elem.value(ofAttribute: "Brewer"))
+                        brewer.append((elem["Brewer"].element!.text))
+                        abv.append((elem["ABV"].element!.text))
+                        location.append((elem["Location"].element!.text))
+                        beers.append((elem["Name"].element!.text))
+                        type.append((elem["Type"].element!.text))
+                        des.append((elem["Description"].element!.text))
+                        print(beers)
+                        //print(elem.all.count)
+                    }
+                }
+                
+        }
+    
+    }
+    
+    func loadfavbeersinfo() {
+        let d = UserDefaults.standard
+        let da = UserDefaults.standard.bool(forKey: "new")
+      
+        if !da {
+            let a = [""]
+            d.set(true, forKey: "new")
+            d.set(a, forKey: "fav")}
+    
+       
+           
+        
+       
+    }
+    
+    func loadbeers() {
+        let d = UserDefaults.standard
+        let da = UserDefaults.standard.bool(forKey: "new")
+        
+        
+        if !da {
+            let a = [""]
+            d.set(true, forKey: "new")
+            d.set(a, forKey: "fav")}
+        guard let xmlfile = Bundle.main.url(forResource: "beers", withExtension: "xml"),
+            let data = try? Data(contentsOf: xmlfile)
+            else{return
+                
+        }
+        // let file = Bundle.main.pa
+        /* let url1 = Bundle.main.url(forResource: "beers", withExtension: "db")
+         let URL4 = URL(fileURLWithPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "beers.db")
+         if FileManager.default.fileExists(atPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "beers.db"){
+         print("True")
+         try? FileManager.default.removeItem(at: URL4)
+         getfavs()
+         }
+         else{
+         print("false")
+         try? FileManager.default.copyItem(at: url1!, to: URL4)
+         */ do{
+            
+            let xmlroot = try AEXMLDocument(xml: data)
+            /* for child in xmlroot.root.children {
+             //print(child.name)
+             }
+             */
+            //let f = fav
+            for beer in xmlroot.root["beer"].all! {
+                if let brew = beer.attributes["Brewer"] {
+                    brewer.append(brew)
+                    //fav.brewer = brew
+                    //try? context.save()
+                }
+                if let loc = beer.attributes["Location"]{
+                    location.append(loc)
+                    //fav.location = loc
+                    //try? context.save()
+                    //print(fav.location?.count)
+                }
+                if let ty = beer.attributes["Type"]{
+                    type.append(ty)
+                    //fav.type = ty
+                    ////try? context.save()
+                }
+                if let a = beer.attributes["ABV"]{
+                    abv.append(a)
+                    // fav.abv = a
+                    //try? context.save()
+                }
+                if let d = beer.attributes["Description"]{
+                    des.append(d)
+                    // fav.description1 = d
+                    //try? context.save()
+                }
+                if let name = beer.attributes["Name"]{
+                    beers.append(name)
+                    //print(beers)
+                    // fav.name = name
+                    //ry? context.save()
+                    // fav.name?.append(name)
+                    //  print(fav.name?.count)
+                    //  print(fav.name?.last)
+                    // print(beers.count)
+                    //try? context.save()
+                }
+                
+                //favoo.b.append(false)
+                /*var i = 0
+                 while i <= beers.count {
+                 fav.name = beers[i]
+                 print(i)
+                 print(beers[i])
+                 i = i + 1
+                 try? context.save()
+                 }*/
+                //getfavs()
+                // print(thefavs.count)
+            }
+            
+            
+            
+            
+            /* if let beerss = xmlroot.root["beer"].all {
+             for Name in beerss {
+             if let n = Name.value{
+             print(n)
+             beers.append(n)
+             }
+             }
+             }*/
+            
+         }
+         catch {
+            
+            
+        }
     }
     func land() {
         if UIDevice.current.orientation == .landscapeLeft {
@@ -97,5 +278,11 @@ class FirstViewController: UIViewController {
     }
 
 
+}
+
+class connected {
+    class var isconnected: Bool {
+        return NetworkReachabilityManager()!.isReachable
+    }
 }
 

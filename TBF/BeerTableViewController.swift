@@ -130,8 +130,8 @@ class BeerTableViewController: UITableViewController {
             cell.beerimage.image = UIImage(named: "dark")
         }
         
-        if type[indexPath.row] == "Best Bitter" {
-            cell.beerimage.image = UIImage(named: "bestbitter")
+        if type[indexPath.row] == "Brown" {
+            cell.beerimage.image = UIImage(named: "brown")
         }
        //cell.textLabel?.text = beers[indexPath.row]
         //cell.textLabel?.text = thefavs[indexPath.row].name

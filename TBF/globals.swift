@@ -7,9 +7,23 @@
 //
 
 import Foundation
+import Alamofire
+
 var beers = Array<String>()
 var brewer = Array<String>()
 var location = Array<String>()
 var type = Array<String>()
 var abv = Array<String>()
 var des = Array<String>()
+var favbeers = Array<String>()
+var favbrewer = Array<String>()
+var favlocation = Array<String>()
+var favtype = Array<String>()
+var favabv = Array<String>()
+var favdes = Array<String>()
+var favlo = String()
+public class connected1 {
+    public var isconnected:Bool {
+        return (NetworkReachabilityManager()?.isReachable)!
+    }
+}
