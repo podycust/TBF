@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+//import AssistantKit
 
 class infoViewController: UIViewController {
 
@@ -19,8 +19,8 @@ class infoViewController: UIViewController {
     //var fav = false
     /// called when view reappers checks if the currect beer is still in favorites!
     override func viewDidAppear(_ animated: Bool) {
-        brewer.sizeToFit()
-        location.sizeToFit()
+       
+        //location.sizeToFit()
         //abv.sizeToFit()
         //type.sizeToFit()
         //des.sizeToFit()
@@ -45,7 +45,7 @@ class infoViewController: UIViewController {
     {
         let defaults = UserDefaults.standard
         f = defaults.array(forKey: "fav")!
-        rowd = defaults.array(forKey: "row")!
+       favstore = defaults.array(forKey: "row")!
         if fava == true {
             favbut.setImage(UIImage(named: "icons8-Star"), for: UIControlState.normal)
             favbut.setTitle("Add To Favorites", for: UIControlState.normal)
@@ -73,15 +73,17 @@ class infoViewController: UIViewController {
             //try? context.save()
            
            // print(f)
-            rowd.append(row)
+            //rowd.append(row)
+            favstore.append(row)
+            print(row)
            // print(rowd)
             f.append(navigationItem.title)
             defaults.set(f, forKey: "fav")
-            defaults.set(rowd, forKey: "row")
-            print("added")
+            defaults.set(favstore, forKey: "row")
+            //print("added")
         }
         
-        print("pressed")
+        //print("pressed")
         
     }
     
@@ -116,6 +118,36 @@ class infoViewController: UIViewController {
         type.text = t
         brewer.text = b
         des.sizeToFit()
+        location.adjustsFontSizeToFitWidth = true
+         brewer.adjustsFontSizeToFitWidth = true
+       // let screen = Device.screen
+      /*  if l != "Location: South Woodham Ferrers, Essex" {
+            if UIDeviceOrientation.portrait.isPortrait {
+                switch screen {
+                case .inches_4_0:
+                    //location.font = location.font.withSize(17)
+                    //location.sizeToFit()
+                    //print("Running on iPhone 5, 5S or SE")
+                    break
+                case .unknown: break
+                    
+                case .inches_3_5:
+                    break
+                case .inches_4_7:
+                    break
+                case .inches_5_5:
+                    break
+                case .inches_7_9:
+                    break
+                case .inches_9_7:
+                    break
+                case .inches_12_9:
+                    break
+                }
+                
+            }
+        }*/
+        //print(row)
         // Do any additional setup after loading the view.
         self.navigationItem.title = n
         

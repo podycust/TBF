@@ -24,4 +24,5 @@ pod 'Firebase/AdMob'
 #pod ‘Groot’
 pod 'Alamofire', '~> 4.4'
 pod 'SWXMLHash', '~> 4.0.0'
+pod "AssistantKit"
 end

@@ -24,7 +24,7 @@ class favTableViewController: UITableViewController {
         if let favobject = d.array(forKey: "fav") {
             fav = favobject
         }
-        if connected.isconnected {
+        if connection.isconnected {
             loadfavbeers()} 
         tableView.reloadData()
     }
@@ -77,7 +77,9 @@ class favTableViewController: UITableViewController {
            
             //self.tableView.beginUpdates()
         fav.remove(at: indexPath.row + 1)
+        favstore.remove(at: indexPath.row + 1)
         UserDefaults.standard.set(fav, forKey: "fav")
+        UserDefaults.standard.set(favstore, forKey: "row")
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
            tableView.reloadData()
             
@@ -142,7 +144,7 @@ class favTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var a = Array<Any> ()
         a = UserDefaults.standard.array(forKey: "row")!
-        //print(a)
+        print(a)
         let gg = String(describing: a[indexPath.row])
        // let c = gg as! Int
      
@@ -161,7 +163,7 @@ class favTableViewController: UITableViewController {
                 print("Error") // Was not a string
                 return // needs a return or break here
         }
-       // print(b) // Was a string
+      // print(b) // Was a string
         let no: Int = { return Int(b)! }()
        //let no = sender as! Int
        // let no = Int(g)

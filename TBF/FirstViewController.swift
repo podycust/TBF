@@ -32,18 +32,19 @@ class FirstViewController: UIViewController {
     
         // loadtimes()
        // loadprices()
+       networkstatus()
         let beerwork = DispatchQueue (label: "beer_worker")
         beerwork.async {
-            if connected.isconnected {
-            self.loadbeersnew()
-                //self.loadfavbeersinfo()
-                
-            } else {
+            if connection.isconnected {
+                self.connected = true
+            }
+            
+            if !self.connected {
                 let alert = UIAlertController(title: "Error", message: "It Appears That Your Not Connected To The Internet So We Where Unable to Load The Beer List", preferredStyle: UIAlertControllerStyle.alert)
-                let DestructiveAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive) {
-                    (result : UIAlertAction) -> Void in
-                    print("Destructive")
-                }
+                /*let DestructiveAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive) {
+                 (result : UIAlertAction) -> Void in
+                 print("Destructive")
+                 } */
                 
                 // Replace UIAlertActionStyle.Default by UIAlertActionStyle.default
                 
@@ -55,6 +56,28 @@ class FirstViewController: UIViewController {
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)
             }
+            //self.networkstatus()
+          /*  if connected.isconnected {
+            self.loadbeersnew()
+                //self.loadfavbeersinfo()
+                
+            } else {
+                let alert = UIAlertController(title: "Error", message: "It Appears That Your Not Connected To The Internet So We Where Unable to Load The Beer List", preferredStyle: UIAlertControllerStyle.alert)
+                /*let DestructiveAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive) {
+                    (result : UIAlertAction) -> Void in
+                    print("Destructive")
+                } */
+                
+                // Replace UIAlertActionStyle.Default by UIAlertActionStyle.default
+                
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                    (result : UIAlertAction) -> Void in
+                    print("OK")
+                }
+                //alert.addAction(DestructiveAction)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+            }*/
         }  //loadbeers()
         loadads()
         web.frame = self.view.bounds
@@ -64,9 +87,38 @@ class FirstViewController: UIViewController {
         web.loadRequest(req)
         NotificationCenter.default.addObserver(self, selector: #selector(land), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     }
+    let reach = NetworkReachabilityManager()
+    var connected = Bool()
     
+    func networkstatus() {
+        reach?.listener = {
+            status in
+            switch  status {
+            case .notReachable:
+                
+                self.connected = false
+            case .unknown:
+                break
+            case .reachable(_):
+                self.connected = true
+                self.loadbeersnew()
+            }
+        }
+        reach?.startListening()
+    }
     
     func loadbeersnew() {
+        let d = UserDefaults.standard
+        let da = UserDefaults.standard.bool(forKey: "new")
+        
+        if !da {
+            let a = [""]
+            d.set(true, forKey: "new")
+            d.set(a, forKey: "fav")
+            
+        }
+        
+        
         Alamofire.request("https://www.bowesgames.co.uk/app/beers.xml", parameters: nil) //Alamofire defaults to GET requests
             
             .response { response in
@@ -280,9 +332,11 @@ class FirstViewController: UIViewController {
 
 }
 
-class connected {
+class connection {
     class var isconnected: Bool {
         return NetworkReachabilityManager()!.isReachable
     }
+    
+
 }
 

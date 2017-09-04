@@ -58,6 +58,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9F58FFC01F5B5BA50016EBEF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F607A491EA9FDBC00CB7C64 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,7 +95,18 @@
 		9F22E1481F2E3EBD00EC0846 /* favTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favTableViewController.swift; sourceTree = "<group>"; };
 		9F325C481EAE26FA0017CCAD /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		9F325C4A1EAE27180017CCAD /* thurrockbeer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thurrockbeer.png; sourceTree = "<group>"; };
+		9F3D00021F5B64F200FFFE88 /* TBF-WatchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TBF-WatchOS.entitlements"; sourceTree = "<group>"; };
 		9F456E801F36425000C7BC1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F58FF9E1F5B5BA50016EBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9F58FFA01F5B5BA50016EBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F58FFA21F5B5BA50016EBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F58FFAC1F5B5BA50016EBEF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9F58FFAE1F5B5BA50016EBEF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9F58FFB01F5B5BA50016EBEF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9F58FFB21F5B5BA50016EBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F58FFB41F5B5BA50016EBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F58FFB51F5B5BA50016EBEF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9F58FFC11F5B5E1B0016EBEF /* TableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
 		9F607A3E1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F607A401EA9FDBC00CB7C64 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		9F607A421EA9FDBC00CB7C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +140,8 @@
 		9FC9F81F1EED58480096E237 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "Pods/../build/Debug-iphoneos/SwiftCSV/SwiftCSV.framework"; sourceTree = "<group>"; };
 		9FC9F8211EED585F0096E237 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		9FEB90111F2E8A2A00F4CFBA /* t.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = t.txt; sourceTree = "<group>"; };
+		9FFBA7B21F5C844F00438F1D /* AssistantKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AssistantKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFBA7B41F5C847300438F1D /* AssistantKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AssistantKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFDD1CB1F5370B00002C8EC /* beerscellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerscellTableViewCell.swift; sourceTree = "<group>"; };
 		9FFDD1D01F5383200002C8EC /* globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +183,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9F58FF9C1F5B5BA50016EBEF /* TBF-WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F3D00021F5B64F200FFFE88 /* TBF-WatchOS.entitlements */,
+				9F58FF9D1F5B5BA50016EBEF /* Interface.storyboard */,
+				9F58FFA01F5B5BA50016EBEF /* Assets.xcassets */,
+				9F58FFA21F5B5BA50016EBEF /* Info.plist */,
+			);
+			path = "TBF-WatchOS";
+			sourceTree = "<group>";
+		};
+		9F58FFAB1F5B5BA50016EBEF /* TBF-WatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9F58FFAC1F5B5BA50016EBEF /* InterfaceController.swift */,
+				9F58FFAE1F5B5BA50016EBEF /* ExtensionDelegate.swift */,
+				9F58FFB01F5B5BA50016EBEF /* NotificationController.swift */,
+				9F58FFB21F5B5BA50016EBEF /* Assets.xcassets */,
+				9F58FFB41F5B5BA50016EBEF /* Info.plist */,
+				9F58FFB51F5B5BA50016EBEF /* PushNotificationPayload.apns */,
+				9F58FFC11F5B5E1B0016EBEF /* TableRowController.swift */,
+			);
+			path = "TBF-WatchOS Extension";
+			sourceTree = "<group>";
+		};
 		9F607A3F1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +224,8 @@
 				9FA6E9CB1EAA9B8A000EB7A8 /* Settings.bundle */,
 				9F82C13F1EA3CF400066CD59 /* TBF */,
 				9F607A3F1EA9FDBC00CB7C64 /* OneSignalNotificationServiceExtension */,
+				9F58FF9C1F5B5BA50016EBEF /* TBF-WatchOS */,
+				9F58FFAB1F5B5BA50016EBEF /* TBF-WatchOS Extension */,
 				9F82C13E1EA3CF400066CD59 /* Products */,
 				9F82C1541EA3D5560066CD59 /* Frameworks */,
 				39562F333010B006E9E35FB5 /* Pods */,
@@ -229,6 +279,8 @@
 		9F82C1541EA3D5560066CD59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FFBA7B41F5C847300438F1D /* AssistantKit.framework */,
+				9FFBA7B21F5C844F00438F1D /* AssistantKit.framework */,
 				9F978FDA1F59BB66007D5573 /* Alamofire.framework */,
 				9F86B2FA1F2BA22D008A91AB /* AEXML.framework */,
 				9FC9F81F1EED58480096E237 /* SwiftCSV.framework */,
@@ -277,6 +329,7 @@
 				CF562500E000AD4F5B8C47C3 /* [CP] Embed Pods Frameworks */,
 				A1306C8A6CCB2FAEB7ECF78E /* [CP] Copy Pods Resources */,
 				9F607A491EA9FDBC00CB7C64 /* Embed App Extensions */,
+				9F58FFC01F5B5BA50016EBEF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -494,6 +547,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9F58FF9D1F5B5BA50016EBEF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F58FF9E1F5B5BA50016EBEF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		9F82C1461EA3CF400066CD59 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
