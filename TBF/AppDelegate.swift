@@ -44,8 +44,8 @@ GADMobileAds.configure(withApplicationID: "ca-app-pub-7795363561300277~704858334
         print(Bundle.main.bundlePath)
         FirebaseApp.configure()
         if WCSession.isSupported(){
-            WCSession.default().delegate = self
-            WCSession.default().activate()
+            WCSession.default.delegate = self
+            WCSession.default.activate()
         }
         return true
     }

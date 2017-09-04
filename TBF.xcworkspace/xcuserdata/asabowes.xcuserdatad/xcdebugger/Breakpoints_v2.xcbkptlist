@@ -202,12 +202,12 @@
                   moduleName = "TBF"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/asabowes/Library/Mobile%20Documents/com~apple~CloudDocs/xcode%20projects/TBF/TBF/TBF/SocialViewController.swift"
-                  timestampString = "526164174.787662"
+                  timestampString = "526232927.880261"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "132"
                   endingLineNumber = "132"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "21">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -217,12 +217,12 @@
                   moduleName = "TBF"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/asabowes/Library/Mobile%20Documents/com~apple~CloudDocs/xcode%20projects/TBF/TBF/TBF/SocialViewController.swift"
-                  timestampString = "526164174.78903"
+                  timestampString = "526232927.882579"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "132"
                   endingLineNumber = "132"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "48">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -602,7 +602,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBF/infoViewController.swift"
-            timestampString = "526164174.62826"
+            timestampString = "526232924.877072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -794,7 +794,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBF/infoViewController.swift"
-            timestampString = "526164174.629034"
+            timestampString = "526232924.877286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -1098,7 +1098,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBF/infoViewController.swift"
-            timestampString = "526164174.630009"
+            timestampString = "526232924.877496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"

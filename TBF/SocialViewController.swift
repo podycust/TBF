@@ -53,7 +53,7 @@ loadads()
         NotificationCenter.default.addObserver(self, selector: #selector(enterfor), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     @IBOutlet weak var web: UIWebView!
-    func enterfor()
+    @objc func enterfor()
     {
         web.reload()
     }

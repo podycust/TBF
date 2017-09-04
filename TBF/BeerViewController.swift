@@ -27,7 +27,7 @@ class BeerViewController: UIViewController, UIWebViewDelegate {
         
       
     }
-    func enterforground() {
+    @objc func enterforground() {
         web.reload()
     }
     @IBOutlet weak var loader: UIActivityIndicatorView!

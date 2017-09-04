@@ -263,7 +263,7 @@ class FirstViewController: UIViewController {
             
         }
     }
-    func land() {
+    @objc func land() {
         if UIDevice.current.orientation == .landscapeLeft {
         web.frame = self.view.bounds}
        if UIDevice.current.orientation == .landscapeRight{
@@ -289,11 +289,11 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var bannerView: GADBannerView!
     func loadtimes(){
         let boldtext = "Opening Times: "
-        let attrs = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 14)]
+        let attrs = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)]
         let attstring = NSMutableAttributedString(string: boldtext, attributes: attrs)
         
         let tuesfri = "Tues- Fri: "
-        let tat = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 14)]
+        let tat = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)]
         let tesstring = NSMutableAttributedString(string: tuesfri, attributes: tat)
         attstring.append(tesstring)
         
@@ -302,7 +302,7 @@ class FirstViewController: UIViewController {
         attstring.append(normtueshours)
         
         let satday = "Sat: "
-        let satdayatt = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 14)]
+        let satdayatt = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)]
         let sata = NSMutableAttributedString(string: satday, attributes: satdayatt)
         attstring.append(sata)
         
@@ -315,7 +315,7 @@ class FirstViewController: UIViewController {
     
     func loadprices() {
         let ad = "Admission: "
-        let adatt = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 14)]
+        let adatt = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)]
         let maintextprice = NSMutableAttributedString(string: ad, attributes: adatt)
         
         let mainprice = "Free Tue - Fri lunchtimes, £1 Tue & Wed evenings, £3 Thu evening, £4 Fri evening, £2 Sat all day."
