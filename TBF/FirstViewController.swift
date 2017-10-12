@@ -27,7 +27,7 @@ class FirstViewController: UIViewController {
         
             watch.set(UserDefaults.standard.array(forKey: "fav"), forKey: "beer")
             watch.synchronize()
-            print(watch.array(forKey: "beer"))
+           // print(watch.array(forKey: "beer"))
         }
     
         // loadtimes()
@@ -80,7 +80,7 @@ class FirstViewController: UIViewController {
             }*/
         }  //loadbeers()
         loadads()
-        web.frame = self.view.bounds
+        web.frame = self.view.frame
         //web.frame = view.frame
         let burl = Bundle.main.url(forResource: "home", withExtension: "html")
         let req = URLRequest(url: burl!)
@@ -89,7 +89,7 @@ class FirstViewController: UIViewController {
     }
     let reach = NetworkReachabilityManager()
     var connected = Bool()
-    
+    //Lets check to see if we have working internet connection be that over Mobile/Celluar Data or Wifi and handle it
     func networkstatus() {
         reach?.listener = {
             status in
@@ -106,7 +106,8 @@ class FirstViewController: UIViewController {
         }
         reach?.startListening()
     }
-    
+    //First we check to see if we have any saved userdefaults if we dont lets set them up and then continue downloading and pasring the xml file ready to be loaded
+    //into the beer list table when user taps the option in navbar
     func loadbeersnew() {
         let d = UserDefaults.standard
         let da = UserDefaults.standard.bool(forKey: "new")

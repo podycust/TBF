@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="len-mK-fiS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="len-mK-fiS">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,23 +65,20 @@
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="9hL-hP-B6r"/>
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="top" secondItem="m7N-T0-tM9" secondAttribute="bottom" constant="1" id="BIh-iv-h3e"/>
                             <constraint firstItem="m7N-T0-tM9" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="Bp8-0j-rVl"/>
-                            <constraint firstItem="eSr-Ux-INI" firstAttribute="leading" secondItem="m7N-T0-tM9" secondAttribute="leading" id="Niz-B7-jqy"/>
+                            <constraint firstItem="m7N-T0-tM9" firstAttribute="leading" secondItem="eSr-Ux-INI" secondAttribute="leading" id="Mig-KR-GyL"/>
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="leading" secondItem="m7N-T0-tM9" secondAttribute="leading" id="Px9-3t-OtR"/>
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="WJc-41-1Mk"/>
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="brP-0A-UeY"/>
                             <constraint firstAttribute="trailing" secondItem="eSr-Ux-INI" secondAttribute="trailing" id="o7m-XR-PXY"/>
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="top" secondItem="m7N-T0-tM9" secondAttribute="bottom" constant="1" id="o9y-uJ-B0H"/>
                             <constraint firstItem="eSr-Ux-INI" firstAttribute="top" secondItem="m7N-T0-tM9" secondAttribute="bottom" constant="1" id="s0g-ey-6bt"/>
-                            <constraint firstItem="eSr-Ux-INI" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="469" id="s5D-Zj-SN0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="9hL-hP-B6r"/>
-                                <exclude reference="Niz-B7-jqy"/>
                                 <exclude reference="WJc-41-1Mk"/>
                                 <exclude reference="o7m-XR-PXY"/>
                                 <exclude reference="o9y-uJ-B0H"/>
-                                <exclude reference="s5D-Zj-SN0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -89,14 +86,12 @@
                                 <exclude reference="0zU-DX-2da"/>
                                 <include reference="9hL-hP-B6r"/>
                                 <exclude reference="BIh-iv-h3e"/>
-                                <include reference="Niz-B7-jqy"/>
                                 <exclude reference="Px9-3t-OtR"/>
                                 <include reference="WJc-41-1Mk"/>
                                 <exclude reference="brP-0A-UeY"/>
                                 <include reference="o7m-XR-PXY"/>
                                 <include reference="o9y-uJ-B0H"/>
                                 <exclude reference="s0g-ey-6bt"/>
-                                <include reference="s5D-Zj-SN0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -395,55 +390,6 @@
             </objects>
             <point key="canvasLocation" x="1974.375" y="-831.33802816901414"/>
         </scene>
-        <!--Beer-->
-        <scene sceneID="76f-bm-Ztd">
-            <objects>
-                <viewController title="Beer" id="Unu-AX-6h6" customClass="BeerViewController" customModule="TBF" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JQU-B2-PUW"/>
-                        <viewControllerLayoutGuide type="bottom" id="sDC-EF-hiq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pxR-tI-wqS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-ey-9rz">
-                                <rect key="frame" x="-350" y="167" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPA-CE-TvK">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="flg-Yq-hZi">
-                                <rect key="frame" x="150" y="305.5" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="flg-Yq-hZi" secondAttribute="height" multiplier="1:1" id="wja-IC-FCX"/>
-                                </constraints>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="kPA-CE-TvK" firstAttribute="leading" secondItem="pxR-tI-wqS" secondAttribute="leading" id="B5F-eT-KGf"/>
-                            <constraint firstItem="kPA-CE-TvK" firstAttribute="bottom" secondItem="sDC-EF-hiq" secondAttribute="top" id="GWI-XI-tyM"/>
-                            <constraint firstItem="kPA-CE-TvK" firstAttribute="top" secondItem="JQU-B2-PUW" secondAttribute="bottom" id="LWh-tS-TuR"/>
-                            <constraint firstItem="flg-Yq-hZi" firstAttribute="centerY" secondItem="kPA-CE-TvK" secondAttribute="centerY" id="lSh-Ai-T9C"/>
-                            <constraint firstItem="flg-Yq-hZi" firstAttribute="centerX" secondItem="kPA-CE-TvK" secondAttribute="centerX" id="sAl-4a-qXZ"/>
-                            <constraint firstAttribute="trailing" secondItem="kPA-CE-TvK" secondAttribute="trailing" id="t38-Kc-NP3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Beers" id="FKi-iZ-0fw"/>
-                    <connections>
-                        <outlet property="loader" destination="flg-Yq-hZi" id="nC8-RB-TTH"/>
-                        <outlet property="loadinginc" destination="flg-Yq-hZi" id="FvN-pW-KpK"/>
-                        <outlet property="web" destination="kPA-CE-TvK" id="9gP-4f-TZl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i57-vz-pAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="795" y="1092.2535211267607"/>
-        </scene>
         <!--Social-->
         <scene sceneID="03a-0i-ONn">
             <objects>
@@ -514,25 +460,6 @@
             </objects>
             <point key="canvasLocation" x="874" y="188"/>
         </scene>
-        <!--Beers-->
-        <scene sceneID="Zm6-tO-hVo">
-            <objects>
-                <navigationController title="Beers" automaticallyAdjustsScrollViewInsets="NO" id="0TC-gw-Ht5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Beer" image="Beer Filled" id="pkE-72-Ct6"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ER7-0F-POq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Unu-AX-6h6" kind="relationship" relationship="rootViewController" id="smC-HL-aUN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gU7-Lz-ctv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-223.125" y="1093.3098591549297"/>
-        </scene>
         <!--Beer Info-->
         <scene sceneID="Bdc-kb-Jl0">
             <objects>
@@ -583,7 +510,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FH-pU-2DQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FH-pU-2DQ">
                                 <rect key="frame" x="16" y="187" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
