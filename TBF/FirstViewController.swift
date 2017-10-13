@@ -11,6 +11,7 @@ import GoogleMobileAds
 import AEXML
 import Alamofire
 import SWXMLHash
+import WatchConnectivity
 
 class FirstViewController: UIViewController {
 
@@ -118,8 +119,9 @@ class FirstViewController: UIViewController {
             d.set(a, forKey: "fav")
             
         }
-        
-        
+        phonefav = d.array(forKey: "row")!
+        print(phonefav)
+        loadfavbeers()
         Alamofire.request("https://www.bowesgames.co.uk/app/beers.xml", parameters: nil) //Alamofire defaults to GET requests
             
             .response { response in
@@ -154,13 +156,38 @@ class FirstViewController: UIViewController {
             let a = [""]
             d.set(true, forKey: "new")
             d.set(a, forKey: "fav")}
-    
-       
-           
-        
-       
+
     }
-    
+    func loadfavbeers() {
+        // let xmlfile = URL(fileURLWithPath: favlo)
+        
+        Alamofire.request("https://www.bowesgames.co.uk/app/fav1.xml", parameters: nil) //Alamofire defaults to GET requests
+            .response { response in
+                
+                if let ds = response.data {
+                    // print(ds) // if you want to check XML data in debug window.
+                    //let string1 = String(data: ds, encoding: String.Encoding.utf8) ?? "Data could not be printed"
+                    // print(string1)
+                    let xml = SWXMLHash.parse(ds)
+                    for elem in xml["root"]["beer"].all {
+                        //  print(elem.value(ofAttribute: "Brewer"))
+                        favbrewer.append((elem["Brewer"].element!.text))
+                        favabv.append((elem["ABV"].element!.text))
+                        favlocation.append((elem["Location"].element!.text))
+                        favbeers.append((elem["Name"].element!.text))
+                        favtype.append((elem["Type"].element!.text))
+                        favdes.append((elem["Description"].element!.text))
+                        //print(favbeers)
+                        //print(elem.all.count)
+                        
+                    }
+                    WCSession.default.transferUserInfo(["Beers":favbeers])
+                    WCSession.default.transferUserInfo(["Favs":phonefav])
+                    WCSession.default.transferUserInfo(["Type":favtype])
+                }
+        }
+    }
+        
     func loadbeers() {
         let d = UserDefaults.standard
         let da = UserDefaults.standard.bool(forKey: "new")

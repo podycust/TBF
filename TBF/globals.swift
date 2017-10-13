@@ -23,7 +23,7 @@ var favabv = Array<String>()
 var favdes = Array<String>()
 var favlo = String()
 var favstore = Array<Any>()
-
+var phonefav = Array<Any>()
 public class connected1 {
     public var isconnected:Bool {
         return (NetworkReachabilityManager()?.isReachable)!

@@ -8,9 +8,10 @@
 
 import UIKit
 import CoreData
-import AEXML
+///import AEXML
 import Alamofire
 import SWXMLHash
+import WatchConnectivity
 
 class favTableViewController: UITableViewController {
 
@@ -24,8 +25,8 @@ class favTableViewController: UITableViewController {
         if let favobject = d.array(forKey: "fav") {
             fav = favobject
         }
-        if connection.isconnected {
-            loadfavbeers()} 
+       /* if connection.isconnected {
+            loadfavbeers()} */
         tableView.reloadData()
     }
    
@@ -50,7 +51,10 @@ class favTableViewController: UITableViewController {
                         favdes.append((elem["Description"].element!.text))
                         //print(favbeers)
                         //print(elem.all.count)
+                       
                     }
+                     WCSession.default.transferUserInfo(["Beers":favbeers])
+                    
                 }
         }
             //let data = try? Data.init(contentsOf: xmlfile)

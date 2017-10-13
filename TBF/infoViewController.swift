@@ -9,8 +9,11 @@
 import UIKit
 import CoreData
 //import AssistantKit
+import WatchConnectivity
 
 class infoViewController: UIViewController {
+    
+    
 
     //var fav = Favbeers()
    // var selectedfav : Favbeers? = nil
@@ -53,12 +56,9 @@ class infoViewController: UIViewController {
             if let i = g.index(of: self.navigationItem.title!) {
                f.remove(at: i)
                 UserDefaults.standard.set(f, forKey: "fav")
-                
+                sendtoWatch()
                 //WCSession.default().transferUserInfo(["beers":f])
-                if let watch = UserDefaults(suiteName: "group.tbf.watch") {
-                    watch.set(f, forKey: "beers")
-                    watch.synchronize()
-                }
+               WCSession.default.transferUserInfo(["Favs":phonefav])
             }
         fava = false
             
@@ -80,12 +80,42 @@ class infoViewController: UIViewController {
             f.append(navigationItem.title)
             defaults.set(f, forKey: "fav")
             defaults.set(favstore, forKey: "row")
+            //sendtoWatch()
+            WCSession.default.transferUserInfo(["Favs":phonefav])
             //print("added")
         }
         
         //print("pressed")
         
     }
+//var lastMessage = CFAbsoluteTimeGetCurrent()
+    func sendtoWatch() {
+       /*
+        let currentTime = CFAbsoluteTimeGetCurrent()
+        
+        // if less than half a second has passed, bail out
+        if lastMessage + 0.5 > currentTime {
+            return
+        }
+        
+        // send a message to the watch if it's reachable
+        if (WCSession.default.isReachable) {
+            // this is a meaningless message, but it's enough for our purposes
+            var a = Array<Any> ()
+            a = UserDefaults.standard.array(forKey: "row")!
+            WCSession.default.transferUserInfo(["Favs":a])
+            let message = ["Favs": a]
+            do { try WCSession.default.updateApplicationContext(message)}
+            catch {
+                print("Error!")}
+            WCSession.default.sendMessage(message, replyHandler: nil)
+        }
+        
+        // update our rate limiting property
+        lastMessage = CFAbsoluteTimeGetCurrent()
+        */
+    }
+    
     
     
     @IBAction func favpress(_ sender: Any) {
