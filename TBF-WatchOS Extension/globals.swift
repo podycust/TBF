@@ -10,3 +10,4 @@ import Foundation
 var favbeerswatch = Array<String>()
 var beerswatch = Array<String>()
 var watchfavtype = Array<String>()
+

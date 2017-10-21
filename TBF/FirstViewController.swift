@@ -24,12 +24,12 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //self.navigationItem.title = "Welcome"
-        if let watch = UserDefaults(suiteName: "group.tbf.watch") {
+      //  if let watch = UserDefaults(suiteName: "group.tbf.watch") {
         
-            watch.set(UserDefaults.standard.array(forKey: "fav"), forKey: "beer")
-            watch.synchronize()
+          //  watch.set(UserDefaults.standard.array(forKey: "fav"), forKey: "beer")
+           // watch.synchronize()
            // print(watch.array(forKey: "beer"))
-        }
+       // }
     
         // loadtimes()
        // loadprices()
@@ -117,9 +117,11 @@ class FirstViewController: UIViewController {
             let a = [""]
             d.set(true, forKey: "new")
             d.set(a, forKey: "fav")
-            
+           phonefav = Array<Any>()
+        } else {
+            phonefav = UserDefaults.standard.array(forKey: "row")!
         }
-        phonefav = d.array(forKey: "row")!
+        
         print(phonefav)
         loadfavbeers()
         Alamofire.request("https://www.bowesgames.co.uk/app/beers.xml", parameters: nil) //Alamofire defaults to GET requests

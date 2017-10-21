@@ -55,7 +55,11 @@ class infoViewController: UIViewController {
             let g = f as! Array<String>
             if let i = g.index(of: self.navigationItem.title!) {
                f.remove(at: i)
+                print(i)
+                favstore.remove(at: i - 1)
                 UserDefaults.standard.set(f, forKey: "fav")
+                UserDefaults.standard.set(favstore, forKey: "row")
+                phonefav = favstore
                 sendtoWatch()
                 //WCSession.default().transferUserInfo(["beers":f])
                WCSession.default.transferUserInfo(["Favs":phonefav])
@@ -80,6 +84,7 @@ class infoViewController: UIViewController {
             f.append(navigationItem.title)
             defaults.set(f, forKey: "fav")
             defaults.set(favstore, forKey: "row")
+            phonefav = favstore
             //sendtoWatch()
             WCSession.default.transferUserInfo(["Favs":phonefav])
             //print("added")

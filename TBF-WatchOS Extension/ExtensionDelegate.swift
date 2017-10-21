@@ -29,14 +29,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if (userInfo["Favs"] != nil) {
             favbeerswatch = userInfo["Favs"] as! Array<String>
             print(favbeerswatch)
+            print("Fav Beers have reached watch")
             UserDefaults.standard.set(favbeerswatch, forKey: "watchfav")
+            
         }
         if (userInfo["Type"] != nil) {
             watchfavtype = userInfo["Type"] as! Array<String>
             UserDefaults.standard.set(watchfavtype, forKey: "watchtype")
         }
-        print(beerswatch.count)
-        print(watchfavtype)
     }
     
 var session: WCSession!

@@ -11,11 +11,20 @@ import Foundation
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    public var watchupdate = Int() {
+        didSet {
+            
+        }
+    }
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
+   
+    @IBAction func refreshpressed() {
+   updatetable()
+    }
     
-    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+    func updatetable() {
         favstable.setNumberOfRows(favbeerswatch.count, withRowType: "favrow")
         
         for i in 0..<favbeerswatch.count {
@@ -93,7 +102,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         favstable.setNumberOfRows(favbeerswatch.count, withRowType: "favrow")
-        
+        print(favbeerswatch)
         for i in 0..<favbeerswatch.count {
             if let row = favstable.rowController(at: i) as? WatchFavRowController {
                 let t = Int(favbeerswatch[i])
@@ -127,9 +136,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }
         super.willActivate()
     }
-    
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        print("hello")
+    }
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+        updatetable()
         super.didDeactivate()
     }
     
