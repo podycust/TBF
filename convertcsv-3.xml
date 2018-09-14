@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <beer>
+    <Brewer>Billericay Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>My Old Man</Name>
+    <ABV>3.9</ABV>
+    <Description>This traditional amber bitter has a great balance of malt &amp; bitter</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Billericay Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>Sex&amp;Drugs&amp;Rock&amp;Roll</Name>
+    <ABV>5.0</ABV>
+    <Description>A hoppy IPA with 3 American hops added 3 times during the brewing process</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Billericay Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>Mild With No Name</Name>
+    <ABV>5.5</ABV>
+    <Description>Easy drinking strong mild with chocolate and coffee flavours</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Brentwood Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>BBC1</Name>
+    <ABV>1.7</ABV>
+    <Description>Light brown in colour, loads of flavours bursting on the palate from the mix of Columbus, Chinook, Citra &amp; Cascade hops</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Brentwood Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>Legacy</Name>
+    <ABV>4.0</ABV>
+    <Description>Amber bitter, slightly sweet with light hoppy finish</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Calvors</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Smooth Hoperator</Name>
+    <ABV>4.0</ABV>
+    <Description>A blend of four malts delivers a well balanced body and copper colour. An aroma of soft fruit and honey and balanced bitterness are provided by English hops</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Calvors</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Session IPA</Name>
+    <ABV>4.2</ABV>
+    <Description>everyday, easy drinking, golden Session IPA, with 4 types of American hops</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Cliff Quay</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Full Steam Ahead</Name>
+    <ABV>4.1</ABV>
+    <Description>Hoppy very pale ale, a delicate malty slightly grainy flavour is the background to a hoppy flavour and aroma</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Colchester</Brewer>
+    <Location>Essex</Location>
+    <Name>Metropolis</Name>
+    <ABV>3.9</ABV>
+    <Description>A golden session beer, with enormous depth of flavour and a long floral, spicy finish from U.S. Cascade hops</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Colchester</Brewer>
+    <Location>Essex</Location>
+    <Name>No 1</Name>
+    <ABV>4.1</ABV>
+    <Description>A classic English best bitter, copper in colour. Whole leaf Boadicea hops for flavour and the definitive aroma of East Kent Goldings</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Colchester</Brewer>
+    <Location>Essex</Location>
+    <Name>Bearded Lady</Name>
+    <ABV>4.4</ABV>
+    <Description>No description available</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Colchester</Brewer>
+    <Location>Essex</Location>
+    <Name>Double drop Mild</Name>
+    <ABV>4.5</ABV>
+    <Description>Dark, ruby mild. Sweet and fruity</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Crouch Vale</Brewer>
+    <Location>Essex</Location>
+    <Name>Essex Boys</Name>
+    <ABV>3.8</ABV>
+    <Description>Full bodied, traditional-style mid-brown “best” brewed from 100% English barley malt and copious English Challenger and Boadicea hops</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Crouch Vale</Brewer>
+    <Location>Essex</Location>
+    <Name>Citra</Name>
+    <ABV>3.9</ABV>
+    <Description>An exceptionally clean and hoppy session beer</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Crouch Vale</Brewer>
+    <Location>Essex</Location>
+    <Name>Galaxy</Name>
+    <ABV>4.0</ABV>
+    <Description>amber-coloured Galaxy IPA features crystal malt and Styrian Wolf hops and is sure to hit the spot!</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Crouch Vale</Brewer>
+    <Location>Essex</Location>
+    <Name>Eclipse Stout</Name>
+    <ABV>4.2</ABV>
+    <Description>Dark, full-bodied and smooth</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Crouch Vale</Brewer>
+    <Location>Essex</Location>
+    <Name>Yakima</Name>
+    <ABV>4.2</ABV>
+    <Description>Very pale with delicious US Amarillo hops, which are earthily aromatic and the beer highly drinkable</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Crouch Vale</Brewer>
+    <Location>Essex</Location>
+    <Name>Feastival Special</Name>
+    <ABV>4.3</ABV>
+    <Description>A one-off special created by Crouch Vale especially for Thurrock Beer Festival.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Earl Soham</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Gannet Mild</Name>
+    <ABV>3.3</ABV>
+    <Description>A traditional mild</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Earl Soham</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Albert Ale</Name>
+    <ABV>4.4</ABV>
+    <Description>Brewed using pale malt, crystal malt, and black malt, and only Fuggles hops</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Elephant School</Brewer>
+    <Location>Essex</Location>
+    <Name>Hefelump</Name>
+    <ABV>4.5</ABV>
+    <Description>A cloudy wheat beer in the hefewiezen style, but with added apricots. Unfined. Vegan friendly.</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Fable Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Elixir Gold</Name>
+    <ABV>3.8</ABV>
+    <Description>a combination of Lager Malt, Oats and Wheat which compliment each other to create a balanced base for the hops to shine through. Grapefruit from the Mosaic, Lime from the Citra and floral from the Cascade. Unfined, may be hazy. Vegan Friendly.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Farmers Ales</Brewer>
+    <Location>Essex</Location>
+    <Name>A drop of Nelson Blood</Name>
+    <ABV>3.8</ABV>
+    <Description>An easy drinking but flavourful bitter brewed for Trafalgar Day. </Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Farmers Ales</Brewer>
+    <Location>Essex</Location>
+    <Name>EPA</Name>
+    <ABV>3.9</ABV>
+    <Description>No description available</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Farmers Ales</Brewer>
+    <Location>Essex</Location>
+    <Name>Born To Be Mild</Name>
+    <ABV>4.7</ABV>
+    <Description>Not your usual mild, Born to be Mild is stronger at 4.7%, and full of rich liquorice and roasted flavours. Full bodied and smooth.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Farmers Ales</Brewer>
+    <Location>Essex</Location>
+    <Name>Golden Boar</Name>
+    <ABV>5.0</ABV>
+    <Description>Deep golden, hoppy, slightly sweeter finish. Cascade hops a’plenty take the lead in this popular beer.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Fat Cat </Brewer>
+    <Location>Norfolk</Location>
+    <Name>Fat Cat Bitter</Name>
+    <ABV>3.8</ABV>
+    <Description>A pale gold bitter, with distinct floral, citrus aromas</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Fat Cat </Brewer>
+    <Location>Norfolk</Location>
+    <Name>Honey Ale</Name>
+    <ABV>4.3</ABV>
+    <Description>combining the full flavour of English pale and crystal malts with natural honey, giving a sweetish, yet full-flavoured ale</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>George&apos;s Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Bier D&apos;Or</Name>
+    <ABV>4.0</ABV>
+    <Description>Beer of Gold! Brewed using Hallertau Blanc hops this delicious beer offers floral, grapefruit and herbal notes.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>George&apos;s Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Checkpoint Charlie</Name>
+    <ABV>4.0</ABV>
+    <Description>4 Malt brew with 3 hop varieties from the USA and Germany</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>George&apos;s Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Dragonheart</Name>
+    <ABV>4.9</ABV>
+    <Description>This straw coloured beer is brewed with Styrian Dragon and Goldings Hops, giving fruity and floral aromas.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Green Jack</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Excelsior</Name>
+    <ABV>4.0</ABV>
+    <Description>This golden ale has a fruity hop character and aprominent floral aroma</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Green Jack</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Jester</Name>
+    <ABV>4.4</ABV>
+    <Description>a brand new brew for 2018, a hoppy pale ale a fruity aromas with a long bitter finish</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Green Jack</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Gone Fishing</Name>
+    <ABV>5.5</ABV>
+    <Description>A deep amber coloured ale brewed with American hops.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Gun Dog Ales</Brewer>
+    <Location>Northamptonshire</Location>
+    <Name>Lord Barker</Name>
+    <ABV>4.3</ABV>
+    <Description>a modern day stout, with a rich, velvety character and a warming chocolate nose</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Gun Dog Ales</Brewer>
+    <Location>Northamptonshire</Location>
+    <Name>Springer</Name>
+    <ABV>4.1</ABV>
+    <Description>all-English hopped beer, oozing freshness with hints of delicious fruit note flavours and the aroma of cut grass</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Harwich </Brewer>
+    <Location>Essex</Location>
+    <Name>EPA 100</Name>
+    <ABV>3.8</ABV>
+    <Description>a classic pale, hoppy premium ale – full of character but with a smooth finish</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Harwich</Brewer>
+    <Location>Essex</Location>
+    <Name>Ganges</Name>
+    <ABV>4.0</ABV>
+    <Description>A lovely rounded, well-balanced amber beer with malt notes to accompany the orangey hops</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Harwich</Brewer>
+    <Location>Essex</Location>
+    <Name>Redoubt</Name>
+    <ABV>4.2</ABV>
+    <Description>Rich, dark and silky smooth, jet-black beer with a tan-coloured head</Description>
+    <Availability>Not Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Hope Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Hurricane</Name>
+    <ABV>4.0</ABV>
+    <Description>a refreshing light amber ale brewed with pale and crystal malts and hopped with perle and marynka whole hops</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Hope Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Golden Brown</Name>
+    <ABV>4.2</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Hope Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Back In Black</Name>
+    <ABV>4.3</ABV>
+    <Description>a Black IPA brewed with pale and crystal malts</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Hopmonster</Brewer>
+    <Location>Essex</Location>
+    <Name>Child Of The Jago</Name>
+    <ABV>4.2</ABV>
+    <Description>Light in colour, aromatic on the nose, but with a bitter bite on the tongue. Brewed with Simcoe, Citra, Mosaic and Centennial hops.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Iron Pier Brewery</Brewer>
+    <Location>Kent</Location>
+    <Name>Bitter</Name>
+    <ABV>4.0</ABV>
+    <Description>Traditional bitter with refreshing bitterness and good malt character</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Iron Pier Brewery</Brewer>
+    <Location>Kent</Location>
+    <Name>Rytes</Name>
+    <ABV>4.5</ABV>
+    <Description>Red Rye ale with subtle addition of Ginger</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Iron Pier Brewery</Brewer>
+    <Location>Kent</Location>
+    <Name>Porter</Name>
+    <ABV>5.3</ABV>
+    <Description>Rich roasty porter with refreshing bitter finish</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Leigh-on-Sea</Brewer>
+    <Location>Essex</Location>
+    <Name>Legra Pale</Name>
+    <ABV>3.8</ABV>
+    <Description>A light, fresh and sessionable golden ale</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Leigh-on-Sea</Brewer>
+    <Location>Essex</Location>
+    <Name>Two Tree Island</Name>
+    <ABV>4.5</ABV>
+    <Description>A spicy red ale with a blend of malts including dark crystal for colour, and some big American hops for flavour and aroma</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Leigh-on-Sea</Brewer>
+    <Location>Essex</Location>
+    <Name>Boys of England</Name>
+    <ABV>3.9</ABV>
+    <Description>A refreshing bitter - a donation is made to Southend RNLI for every pint sold</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Leigh-on-Sea</Brewer>
+    <Location>Essex</Location>
+    <Name>SS9</Name>
+    <ABV>9.0</ABV>
+    <Description>A rich Imperial Stout</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mauldons</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Mole Trap</Name>
+    <ABV>3.8</ABV>
+    <Description>A well balanced session beer with a crisp hop bitterness and a late malty flavour.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mauldons</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Silver Adder</Name>
+    <ABV>4.2</ABV>
+    <Description>A light coloured bitter with fine hop and malt combinations, giving a refreshing crisp finish.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mersea</Brewer>
+    <Location>Essex</Location>
+    <Name>Yo Boy</Name>
+    <ABV>3.8</ABV>
+    <Description>A session bitter with balanced malt and a long lasting bitterness on the finish</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mersea</Brewer>
+    <Location>Essex</Location>
+    <Name>Island Gold</Name>
+    <ABV>4.5</ABV>
+    <Description>Made using Lager Malt and Hops especially chosen for a Lager/Pilsner style of ale. Very refreshing.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mersea</Brewer>
+    <Location>Essex</Location>
+    <Name>Oyster Stout</Name>
+    <ABV>5.0</ABV>
+    <Description>A new recipe for a traditional Oyster Ale, using lots of oats, a mixture of light and dark malts, and a small amount of Fuggles hops. The brew has local Mersea Island Oysters added to it</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mighty Oak</Brewer>
+    <Location>Essex</Location>
+    <Name>Oscar Wilde</Name>
+    <ABV>3.7</ABV>
+    <Description>A wonderfully mellow moreish dark mild. Brewed using Maris Otter Pale Crystal and Black malts and gently hopped with Challenger. </Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mighty Oak</Brewer>
+    <Location>Essex</Location>
+    <Name>Mudlark</Name>
+    <ABV>3.7</ABV>
+    <Description>Floral, peachy, citrussy amber ale</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mighty Oak</Brewer>
+    <Location>Essex</Location>
+    <Name>Essex Legend</Name>
+    <ABV>3.8</ABV>
+    <Description>Terrific session ale with tropical grapefruit and passionfruit hop aroma.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mighty Oak</Brewer>
+    <Location>Essex</Location>
+    <Name>Captain Bob</Name>
+    <ABV>3.8</ABV>
+    <Description>A traditional deep amber coloured bitter brewed with the distinctive Nelson Sauvin hop from New Zealand. The aroma is fruity and hoppy on the palate; there is a slighty sweet maltiness that balances an easy going bitterness that is followed by hints of gooseberry elderflower and grape in the finish.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mighty Oak</Brewer>
+    <Location>Essex</Location>
+    <Name>The Mystic</Name>
+    <ABV>4.0</ABV>
+    <Description>Delicate &amp; delicious golden ale. Apricot, peach, melon &amp; grapefruit aromas from the US Amarillo hop</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mighty Oak</Brewer>
+    <Location>Essex</Location>
+    <Name>Whirligig</Name>
+    <ABV>4.5</ABV>
+    <Description>A brown ale, with a crisp, mild coffee, nutty character with hints of caramel, and a pleasant pine, cedar and honey hop finish.</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Milk Street</Brewer>
+    <Location>Somerset</Location>
+    <Name>Same Again</Name>
+    <ABV>3.9</ABV>
+    <Description>Full bodied Session Ale with hints of Tropical Fruits</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Milk Street</Brewer>
+    <Location>Somerset</Location>
+    <Name>Funky Monkey </Name>
+    <ABV>4.0</ABV>
+    <Description>Award winning Fruity Refreshing Ale with hints of Citrus.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mr Majolica&apos;s Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>Wat Dabney</Name>
+    <ABV>4.1</ABV>
+    <Description>A pale ale made with a mix of English and American hops.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mr Majolica&apos;s Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>Spigot</Name>
+    <ABV>4.8</ABV>
+    <Description>A strong, sweet, dark brown mild</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Mr Majolica&apos;s Brewing Co</Brewer>
+    <Location>Essex</Location>
+    <Name>Leonardo&apos;s Bicycle</Name>
+    <ABV>5.0</ABV>
+    <Description>A dark hearty ale made especially for the Festival</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Nethergate</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Golden Willow</Name>
+    <ABV>4.0</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Nethergate</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Suffolk County</Name>
+    <ABV>4.0</ABV>
+    <Description>A Chestnut coloured best bitter, biscuit malt dominates the warm, well-rounded roasted background with a wonderful bitter finish</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Nethergate</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Old Growler</Name>
+    <ABV>5.0</ABV>
+    <Description>A complex, satisfying Porter, smooth and distinctive. Roast malt and fruit feature on the palate and the finish is powerfully hoppy. Tantalising taste buds since 1988.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>North Cotswold</Brewer>
+    <Location>Warwickshire</Location>
+    <Name>Cotswold Best</Name>
+    <ABV>4.0</ABV>
+    <Description>An easy drinking copper coloured best bitter made with finest English Challenger, Goldings and Fuggles hops.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>North Cotswold</Brewer>
+    <Location>Warwickshire</Location>
+    <Name>Shagweaver</Name>
+    <ABV>4.5</ABV>
+    <Description>A pale hoppy bitter brewed with a blend of three New Zealand hops. Appeals to both ale and lager drinkers alike.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Oakham</Brewer>
+    <Location>Cambridgeshire</Location>
+    <Name>Citra</Name>
+    <ABV>4.2</ABV>
+    <Description>A light gold, refreshing beer with grapefruit, lychee and gooseberry aromas leading to a dry bitter finish</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Oakham</Brewer>
+    <Location>Cambridgeshire</Location>
+    <Name>Mompessons Gold</Name>
+    <ABV>5.2</ABV>
+    <Description>Earthy floral aromas and sweet fruit flavours lead to a long hoppy bittersweet finish.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Red Fox</Brewer>
+    <Location>Essex</Location>
+    <Name>IPA</Name>
+    <ABV>3.6</ABV>
+    <Description>Copper coloured with a dry after taste</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Red Fox</Brewer>
+    <Location>Essex</Location>
+    <Name>Best Bitter</Name>
+    <ABV>4.0</ABV>
+    <Description>No description available</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Red Fox</Brewer>
+    <Location>Essex</Location>
+    <Name>Millenium Gold</Name>
+    <ABV></ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Red Fox</Brewer>
+    <Location>Essex</Location>
+    <Name>Surrex Gold</Name>
+    <ABV>4.1</ABV>
+    <Description>An aromatic beer with a strong hint of pink grapefruit and peaches</Description>
+    <Availability>Not Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Reunion Ales</Brewer>
+    <Location>London</Location>
+    <Name>Opening Gambit</Name>
+    <ABV>3.8</ABV>
+    <Description>A lustrous gold in colour Opening Gambit brings mellow hop flavours, biscuit, husky and peel notes and a full hop and malt aroma.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Reunion Ales</Brewer>
+    <Location>London</Location>
+    <Name>Talwar</Name>
+    <ABV>4.5</ABV>
+    <Description>a light, crisp, very pale beer. Subtly infused with freshly ground coriander seeds</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Reunion Ales</Brewer>
+    <Location>London</Location>
+    <Name>Incredible Pale</Name>
+    <ABV>5.0</ABV>
+    <Description>Dry hopped as it conditions for extra oomph, a beautiful copper-straw colour with a herbaceous and fruity nose. The flavour is intense and lasting.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Round Tower</Brewer>
+    <Location>Essex</Location>
+    <Name>Chelmsford Brown Ale</Name>
+    <ABV>3.9</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Round Tower</Brewer>
+    <Location>Essex</Location>
+    <Name>Space Graffiti</Name>
+    <ABV>4.2</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Round Tower</Brewer>
+    <Location>Essex</Location>
+    <Name>Resonator</Name>
+    <ABV>4.8</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Salopian</Brewer>
+    <Location>Shropshire</Location>
+    <Name>Symphony</Name>
+    <ABV>4.3</ABV>
+    <Description>A crescendo of lime and tropical fruit sway across a rich bittersweet movement of crisp malt and a fresh citrus encore.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Salopian</Brewer>
+    <Location>Shropshire</Location>
+    <Name>Deaddrop</Name>
+    <ABV>4.7</ABV>
+    <Description>A fresh and vibrant hop laden golden beer with a lingering clean palate a crisp body and a prolonged finish.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Salopian</Brewer>
+    <Location>Shropshire</Location>
+    <Name>Golden Thread</Name>
+    <ABV>5.0</ABV>
+    <Description>A bright gold ale, using wheat and lager malt and flavoured with an infusion of aroma hops. Clean and crisp to the palate with a hint of sweetness and a long fruit filled finish.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Shakespeare</Brewer>
+    <Location>Warwickshire</Location>
+    <Name>Bards Best</Name>
+    <ABV>4.2</ABV>
+    <Description>a vibrant, hoppy golden ale with subtle hints of citrus</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Shakespeare</Brewer>
+    <Location>Warwickshire</Location>
+    <Name>Othello</Name>
+    <ABV>4.8</ABV>
+    <Description>rich and smoth with hints of chocolate and vanilla</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Shalford</Brewer>
+    <Location>Essex</Location>
+    <Name>Draught Horse</Name>
+    <ABV>3.8</ABV>
+    <Description>No description available</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Shalford</Brewer>
+    <Location>Essex</Location>
+    <Name>Levelley Gold</Name>
+    <ABV>4.0</ABV>
+    <Description>Golden summer ale. A refreshing bitter with a pleasant finish. Made with First Gold Hops an agreeable alternative to lager.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Shalford</Brewer>
+    <Location>Essex</Location>
+    <Name>Stoneley Bitter</Name>
+    <ABV>4.2</ABV>
+    <Description>A medium brown bitter with a well balanced flavour of malt and hops.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Silks</Brewer>
+    <Location>Essex</Location>
+    <Name>Veteran Campaigner</Name>
+    <ABV>3.8</ABV>
+    <Description>A true amber session beer loaded with quality Goldings whole hops for a refreshing honesty. Like the real Veteran Campaigner its been there done it seen it and will continue to do so.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Silks</Brewer>
+    <Location>Essex</Location>
+    <Name>Old Man Shirv</Name>
+    <ABV>4.5</ABV>
+    <Description>Like the legend this copper coloured premium ale is full of character. A smooth and fruity ale using classic Fuggles and Challenger whole hops with a rich malt flavour that leaves a lasting impression.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Silks</Brewer>
+    <Location>Essex</Location>
+    <Name>Pegstar Porter</Name>
+    <ABV>4.8</ABV>
+    <Description>A dark robust wheat porter</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Slaughterhouse</Brewer>
+    <Location>Warwickshire</Location>
+    <Name>Citra</Name>
+    <ABV>4.3</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Slaughterhouse</Brewer>
+    <Location>Warwickshire</Location>
+    <Name>Black Saddle</Name>
+    <ABV>5.0</ABV>
+    <Description>No description available</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>St Peters</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Golden Ale</Name>
+    <ABV>4.0</ABV>
+    <Description>English Pale malts coupled with Challenger and Goldings hops provide the bitterness and aroma. The result is a highly distinctive light golden ale similar in character to a full-bodied Czech lager.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>St Peters</Brewer>
+    <Location>Suffolk</Location>
+    <Name>Organic Ale</Name>
+    <ABV>4.5</ABV>
+    <Description>A clean, crisp, copper coloured traditional English ale made with organically grown malted barley, organic Marynka and organic First Gold hops. It has a pleasing aroma of apples, with hints of dark marmalade on the palate</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Thornbridge</Brewer>
+    <Location>Derbyshire</Location>
+    <Name>California Sun</Name>
+    <ABV>4.5</ABV>
+    <Description>Crisp, hoppy session IPA, full of pine and grapefruit flavours.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Thornbridge</Brewer>
+    <Location>Derbyshire</Location>
+    <Name>Jaywick</Name>
+    <ABV>4.8</ABV>
+    <Description>Starts with a powerful, zesty grapefruit hop flavour but followed by floral rose petals then a smooth malty taste that balances the sharp citrus flavours</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Thornbridge</Brewer>
+    <Location>Derbyshire</Location>
+    <Name>Lucaria </Name>
+    <ABV>6.0</ABV>
+    <Description>Ice cream porter, with chocolate and vanilla flavours.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Titanic</Brewer>
+    <Location>Staffordshire</Location>
+    <Name>Chocolate &amp; Vanilla Stout</Name>
+    <ABV>4.5</ABV>
+    <Description>Rich and opulent, with added chocolate and Madagascan vanilla</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Titanic</Brewer>
+    <Location>Staffordshire</Location>
+    <Name>Plum Porter</Name>
+    <ABV>4.9</ABV>
+    <Description>Rich, dark, strong and well rounded</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Tring</Brewer>
+    <Location>Hertfordshire</Location>
+    <Name>Enigma</Name>
+    <ABV>3.8</ABV>
+    <Description>A red-amber ale with two of the newest English hop varieties, Endeavour and Jester. A flavoursome yet balanced beer.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Tring</Brewer>
+    <Location>Hertfordshire</Location>
+    <Name>Death or Glory</Name>
+    <ABV>7.2</ABV>
+    <Description>A rich, sweet barley wine with a heady, alcoholic nose and incredibly complex flavour profile.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Wibblers</Brewer>
+    <Location>Essex</Location>
+    <Name>Springthing</Name>
+    <ABV>3.4</ABV>
+    <Description>No description available</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Wibblers</Brewer>
+    <Location>Essex</Location>
+    <Name>Apprentice</Name>
+    <ABV>3.9</ABV>
+    <Description>Amber in colour, slightly malty with a hoppy nose. Gluten Free.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Wibblers</Brewer>
+    <Location>Essex</Location>
+    <Name>Hopblack</Name>
+    <ABV>4.0</ABV>
+    <Description>Black in colour but with the smooth taste of a golden beer, no harshness just copius amounts of American Cascade hops with an amazing floral aroma.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Wibblers</Brewer>
+    <Location>Essex</Location>
+    <Name>Copperhouse</Name>
+    <ABV>4.2</ABV>
+    <Description>A rich copper coloured ale featuring finest New Zealand Motueka hops giving distinct citrus/tropical fruit aromas.</Description>
+    <Availability>Not Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Witham</Brewer>
+    <Location>Essex</Location>
+    <Name>Scruffy Mild</Name>
+    <ABV>3.7</ABV>
+    <Description>A traditional dark mild.</Description>
+    <Availability>Available </Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>Witham </Brewer>
+    <Location>Essex</Location>
+    <Name>Witham Gold</Name>
+    <ABV>4.1</ABV>
+    <Description>A refreshing golden ale.</Description>
+    <Availability>Available</Availability>
+    <Type>Unknown</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Garden Mead</Name>
+    <ABV></ABV>
+    <Description>A Medium Sweet, light mead with lovely fresh mint overtones. A great accompaniment to any dessert and also stunning when served chilled over ice.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Tournament Mead</Name>
+    <ABV></ABV>
+    <Description>Tournament mead is a dark and sweet mead, beautifully married with a discreet hint of ginger. Lovely served at room temperature with spicy food, strong cheeses or chilled with ice cream.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Traditional Mead</Name>
+    <ABV></ABV>
+    <Description>A sweet, deliciously full flavoured honey based wine. Traditional Mead is a great accompaniment to strong cheeses and casseroles. Best served at room temperature.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>West Country Mead</Name>
+    <ABV></ABV>
+    <Description>A Medium Sweet honey based wine with a sweet spicy overtone. Lovely served at room temperature and with spicy food or strong cheeses.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Apricot Country Wine</Name>
+    <ABV></ABV>
+    <Description>A Medium Sweet, smooth, richly scented golden fruit wine which oozes the lingering flavour of soft, ripe fruit. Apricot Fruit Wine is great served chilled as a dessert wine or with cheese.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Blackberry Country Wine</Name>
+    <ABV></ABV>
+    <Description>Blackberry fruit wine is a medium wine, bursting with the tangy full flavour and heady aroma of ripe hedgerow fruit. Our Blackberry wine is best served at room temperature, this wine is a great companion to a full flavoured berry dessert.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Damson Country Wine</Name>
+    <ABV></ABV>
+    <Description>Damson Wine is a mellow, off dry wine that&apos;s a traditional favourite. Light and well balanced with a hint of pepper which compliments Indian or Chinese food. Best served at a cool room temperature.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Elderberry Country Wine</Name>
+    <ABV></ABV>
+    <Description>A robust, off-dry red wine that is rich in colour and flavour. This fruity wine is superb as an after dinner drink served with a full flavoured hard cheese or alternatively alongside red meats and casseroles. Elderberry wine is best served at room temperature.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Peach Country Wine</Name>
+    <ABV></ABV>
+    <Description>Peach Wine is a medium Sweet, deliciously scented smooth summery wine with soft ripe fruit flavours. Peach Wine is great served chilled as a dessert wine.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Raspberry Country Wine</Name>
+    <ABV></ABV>
+    <Description>Raspberry Fruit Wine is a medium wine with a ripe raspberry character and a real berry aroma. This fruit wine is a summer favourite - mix with soda or sparkling wine to make a delicious spritzer or choose as a summer dessert wine. Raspberry Wine is best serve chilled.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>N/A</Brewer>
+    <Location>N/A</Location>
+    <Name>Strawberry Country Wine</Name>
+    <ABV></ABV>
+    <Description>Strawberry Wine is a medium, well balanced fruit wine with a delicate strawberry aroma. This fruit wine is a traditional summer favourite that&apos;s best served chilled. Alternatively, serve Strawberry Wine with soda and fresh mint for a longer refreshing drink.</Description>
+    <Availability>Available</Availability>
+    <Type>Wine</Type>
+  </beer>
+  <beer>
+    <Brewer>Aberhalls/Celtic Marshes</Brewer>
+    <Location>Herefordshire</Location>
+    <Name>Ruby Tuesday</Name>
+    <ABV>4.5</ABV>
+    <Description>Fruit Added: Raspberry</Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Berties</Brewer>
+    <Location>Essex</Location>
+    <Name>O B Session</Name>
+    <ABV>4.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Big Bear Brewery</Brewer>
+    <Location>Essex</Location>
+    <Name>Dry</Name>
+    <ABV></ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Core</Brewer>
+    <Location>Kent</Location>
+    <Name>Strawberry</Name>
+    <ABV></ABV>
+    <Description>Fruit Added: Strawberry</Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Cotswold Cider</Brewer>
+    <Location>Oxon</Location>
+    <Name>Yellow Hammer</Name>
+    <ABV></ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Crones</Brewer>
+    <Location>Norfolk</Location>
+    <Name>Old Norfolk</Name>
+    <ABV></ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Delvin End</Brewer>
+    <Location>Essex</Location>
+    <Name>Celtic Storm (W.C)</Name>
+    <ABV>7.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Delvin End</Brewer>
+    <Location>Essex</Location>
+    <Name>Sailors Ruin (R.C)</Name>
+    <ABV>7.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Delvin End</Brewer>
+    <Location>Essex</Location>
+    <Name>Waltzing Wasp</Name>
+    <ABV>7.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Dorset Nectar</Brewer>
+    <Location>Dorset</Location>
+    <Name>Sweet Maiden</Name>
+    <ABV>5.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Double Vision</Brewer>
+    <Location>Kent</Location>
+    <Name>Medium Cider</Name>
+    <ABV>7.4</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Gwint Y Ddraig</Brewer>
+    <Location>Wales</Location>
+    <Name>Farmhouse Scrumpy</Name>
+    <ABV>5.3</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Gwint Y Ddraig</Brewer>
+    <Location>Wales</Location>
+    <Name>Molecatcher</Name>
+    <ABV>5.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Farmer Jim&apos;s</Brewer>
+    <Location>Devon</Location>
+    <Name>Rhubarb Bob</Name>
+    <ABV>4.0</ABV>
+    <Description>Fruit Added: Rhubarb</Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Lilley&apos;s Cider Barn</Brewer>
+    <Location>Somerset</Location>
+    <Name>Merry Monkey Scrumpy</Name>
+    <ABV>4.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Lilley&apos;s Cider Barn</Brewer>
+    <Location>Somerset</Location>
+    <Name>Gladiator</Name>
+    <ABV>8.4</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>London Glider</Brewer>
+    <Location>Essex</Location>
+    <Name>Cider</Name>
+    <ABV>5.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Celtic Marches</Brewer>
+    <Location>Herefordshire</Location>
+    <Name>Ashton Bitters</Name>
+    <ABV>5.6</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Hogan’s</Brewer>
+    <Location>Alcester</Location>
+    <Name>French Revolution</Name>
+    <ABV>4.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Dorset Nectar</Brewer>
+    <Location>Dorset</Location>
+    <Name>Dabinett 5.8%</Name>
+    <ABV>5.8</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Rich&apos;s Cider Farm</Brewer>
+    <Location>Somerset</Location>
+    <Name>Legbender</Name>
+    <ABV>6.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Sandford Orchards</Brewer>
+    <Location>Devon</Location>
+    <Name>Fanny&apos;s Bramble</Name>
+    <ABV>4.0</ABV>
+    <Description>Fruit Added: Blackberry</Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Thatchers</Brewer>
+    <Location>Somerset</Location>
+    <Name>Big Apple</Name>
+    <ABV>5.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Thatchers</Brewer>
+    <Location>Somerset</Location>
+    <Name>Chedder Valley</Name>
+    <ABV>6.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Weston</Brewer>
+    <Location>Herefordshire</Location>
+    <Name>Old Rosie</Name>
+    <ABV>7.3</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Aberhalls/Celtic Marshes</Brewer>
+    <Location>Herefordshire</Location>
+    <Name>Crackling Rosie</Name>
+    <ABV>4.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Berties</Brewer>
+    <Location>Essex</Location>
+    <Name>Gallanthus</Name>
+    <ABV>6.0</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Broadoak</Brewer>
+    <Location>Somerset</Location>
+    <Name>Perry</Name>
+    <ABV>7.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Crones</Brewer>
+    <Location>Norfolk</Location>
+    <Name>Perry</Name>
+    <ABV>6.1</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Double Vision</Brewer>
+    <Location>Kent</Location>
+    <Name>Impared Vision</Name>
+    <ABV>7.4</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Gwint Y Ddraig</Brewer>
+    <Location>Wales</Location>
+    <Name>Two Trees</Name>
+    <ABV>4.5</ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+  <beer>
+    <Brewer>Lilley&apos;s Cider Barn</Brewer>
+    <Location>Somerset</Location>
+    <Name>Bee Sting</Name>
+    <ABV></ABV>
+    <Description></Description>
+    <Availability>Available</Availability>
+    <Type>Cider</Type>
+  </beer>
+</root>
